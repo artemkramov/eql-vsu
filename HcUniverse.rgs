@@ -1,0 +1,24 @@
+HKCR
+{
+	Vsu.HcUniverse.1 = s 'HcUniverse Class'
+	{
+		CLSID = s '{291BDFC0-E9FC-11D3-9BE8-008048C5FDF8}'
+	}
+	Vsu.HcUniverse = s 'HcUniverse Class'
+	{
+		CLSID = s '{291BDFC0-E9FC-11D3-9BE8-008048C5FDF8}'
+		CurVer = s 'Vsu.HcUniverse.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {291BDFC0-E9FC-11D3-9BE8-008048C5FDF8} = s 'HcUniverse Class'
+		{
+			ProgID = s 'Vsu.HcUniverse.1'
+			VersionIndependentProgID = s 'Vsu.HcUniverse'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{291BDFB2-E9FC-11D3-9BE8-008048C5FDF8}'
+			'TypeLib' = s '{291BDFB1-E9FC-11D3-9BE8-008048C5FDF8}'
+		}
+	}
+}

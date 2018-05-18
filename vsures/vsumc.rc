@@ -1,0 +1,12 @@
+LANGUAGE 0x22,0x1
+1 11 vsumc_422.bin
+LANGUAGE 0x19,0x1
+1 11 vsumc_419.bin
+LANGUAGE 0x18,0x1
+1 11 vsumc_418.bin
+LANGUAGE 0x8,0x1
+1 11 vsumc_408.bin
+LANGUAGE 0x9,0x1
+1 11 vsumc_409.bin
+LANGUAGE 0x2,0x1
+1 11 vsumc_402.bin

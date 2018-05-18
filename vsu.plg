@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vsu - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP335.tmp" with contents
+[
+/nologo /MTd /W3 /GX /ZI /Od /I "E:\boost_1_33_1" /D "_DEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /D "ALL_FLAGS" /D "STRICT_INTEGRITY" /D "__LOGS__" /D "FULLPROD" /D ALTERFUNC=1 /FR"e:\vctmp\Debug\vsu/" /Fp"e:\vctmp\Debug\vsu/vsu.pch" /Yu"stdafx.h" /Fo"e:\vctmp\Debug\vsu/" /Fd"e:\vctmp\Debug\vsu/" /FD /GZ /Zm500 /c 
+"E:\prj\win\dbc\vsu\HcUniverse.cpp"
+"E:\prj\win\dbc\vsu\kg.cpp"
+"E:\prj\win\dbc\vsu\mbto.cpp"
+"E:\prj\win\dbc\vsu\Vsu.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP335.tmp" 
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP336.tmp" with contents
+[
+/nologo /MTd /W3 /GX /ZI /Od /I "E:\boost_1_33_1" /D "_DEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /D "ALL_FLAGS" /D "STRICT_INTEGRITY" /D "__LOGS__" /D "FULLPROD" /D ALTERFUNC=1 /FR"e:\vctmp\Debug\vsu/" /Fp"e:\vctmp\Debug\vsu/vsu.pch" /Yc"stdafx.h" /Fo"e:\vctmp\Debug\vsu/" /Fd"e:\vctmp\Debug\vsu/" /FD /GZ /Zm500 /c 
+"E:\prj\win\dbc\vsu\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP336.tmp" 
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP337.bat" with contents
+[
+@echo off
+d:\perl\bin\perl.exe e:\prj\win\perl\updver.pl .\vsu.rc e:\vctmp\Debug\vsu\vsu.res
+]
+Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP337.bat"
+Compiling...
+StdAfx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+Compiling...
+HcUniverse.cpp
+kg.cpp
+Non portable string conversion (char* to LPTSTR)
+mbto.cpp
+Vsu.cpp
+Generating Code...
+Non portable: ¬ поле типа unsigned __int32 может хранитьс€ указатель
+Non portable string conversion (char* to LPTSTR)
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP338.tmp" with contents
+[
+ccerrobj.obj myreg.lib shell32.lib msi.lib eqllib.lib cclib.lib keo.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/vsu.pdb" /debug /machine:I386 /out:"Debug/vsu.exe" /pdbtype:sept /libpath:"e:\lib1998\d" /libpath:"E:\boost_1_33_1\libs\regex\build\vc6" /force:multiple 
+\vctmp\Debug\vsu\HcUniverse.obj
+\vctmp\Debug\vsu\kg.obj
+\vctmp\Debug\vsu\mbto.obj
+\vctmp\Debug\vsu\md5c.obj
+\vctmp\Debug\vsu\StdAfx.obj
+\vctmp\Debug\vsu\Vsu.obj
+\vctmp\Debug\vsu\vsu.res
+]
+Creating command line "link.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP338.tmp"
+Updating build version
+#this is version resource
+Current position is 00000420
+Comments=Fiscal Printer Utility
+CompanyName=Help Micro
+FileDescription=vsu Module
+here we need to work
+FileVersion=205, 726, 17669, 21449 
+InternalName=vsu
+LegalCopyright=Copyright 2000-2008
+LegalTrademarks=Help Micro
+OLESelfRegister=
+OriginalFilename=vsu.EXE
+PrivateBuild=
+ProductName=vsu Module
+ProductVersion=1, 0, 0, 1
+SpecialBuild=
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP339.bat" with contents
+[
+@echo off
+".\Debug\vsu.exe" /RegServer
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+echo Server registration done!
+]
+Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP339.bat"
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+LIBCMTD.lib(_wctype.obj) : warning LNK4006: _iswpunct already defined in eqllib.lib(cash_convert.obj); second definition ignored
+LIBCMTD.lib(_wctype.obj) : warning LNK4006: _iswalnum already defined in eqllib.lib(cash_convert.obj); second definition ignored
+LIBCMTD.lib(_wctype.obj) : warning LNK4006: _iswprint already defined in eqllib.lib(cash_convert.obj); second definition ignored
+LIBCMTD.lib(_wctype.obj) : warning LNK4006: _iswgraph already defined in eqllib.lib(cash_convert.obj); second definition ignored
+LIBCMTD.lib(_wctype.obj) : warning LNK4006: _iswcntrl already defined in eqllib.lib(cash_convert.obj); second definition ignored
+Debug/vsu.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+<h3>Output Window</h3>
+Performing registration
+Server registration done!
+
+
+
+<h3>Results</h3>
+vsu.exe - 0 error(s), 7 warning(s)
+</pre>
+</body>
+</html>

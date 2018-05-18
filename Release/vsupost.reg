@@ -1,0 +1,5 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Help Co\vsu]
+"DefaultFlags"=dword:00000005
+

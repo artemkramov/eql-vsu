@@ -1,0 +1,399 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Bulgarian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_BGR)
+#ifdef _WIN32
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "vsucfg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENCODING DIALOG DISCARDABLE  0, 0, 220, 188
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "&Файлови настройки"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Входни файлови формати",IDC_STATIC,7,7,206,61
+    CONTROL         "VSU формат",IDC_F_VSU,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,18,110,10
+    CONTROL         "ИСЛ формат",IDC_F_ISL,"Button",BS_AUTORADIOBUTTON,15,29,
+                    110,10
+    CONTROL         "Елка формат",IDC_F_ELKA,"Button",BS_AUTORADIOBUTTON,15,
+                    40,190,10
+    CONTROL         "Orgtech формат",IDC_F_DATECS,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Repeat button",
+                    IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,29,60,10
+    GROUPBOX        "Входящо прекодиране",IDC_STATIC,7,74,100,37
+    CONTROL         "ОЕМ",IDC_IN_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    15,84,76,10
+    CONTROL         "Windows",IDC_IN_WIN,"Button",BS_AUTORADIOBUTTON,15,95,
+                    76,10
+    GROUPBOX        "Изходящо прекодиране",IDC_STATIC,113,74,100,37
+    CONTROL         "OEM",IDC_OUT_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    121,84,76,10
+    CONTROL         "Windows",IDC_OUT_WIN,"Button",BS_AUTORADIOBUTTON,121,95,
+                    76,10
+    GROUPBOX        "Настройкa на следената директория",IDC_STATIC,7,116,206,
+                    65
+    CONTROL         "Характеристики на файла в посочената директория:",
+                    IDC_USE_WATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,
+                    126,190,10
+    EDITTEXT        IDC_WATCHDIR,15,138,134,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Промяна",IDC_WATCHDIR_CHANGE,155,138,50,14
+    RTEXT           "Тырсене на файл с посочено разширение:",IDC_STATIC,15,
+                    159,146,8
+    EDITTEXT        IDC_WATCHMASK,166,158,39,14,ES_AUTOHSCROLL
+END
+
+IDD_DEPTCODES DIALOG DISCARDABLE  0, 0, 220, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "&Кодове на департаментите"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_LIST_DEPT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_EDITLABELS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,7,206,114
+END
+
+IDD_DEFCONN DIALOG DISCARDABLE  0, 0, 220, 151
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Връзка по &подразбиране"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Start VSU on Windows load",IDC_CHB_AUTORUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,7,189,10
+    CONTROL         "Връзка с касовия апарат при зареждане",IDC_CHB_DEFCONN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,18,189,10
+    GROUPBOX        "",IDC_STATIC,7,34,206,49
+    CONTROL         "Пълен протокол (по логически номер)",IDC_RADIO_LOGNUM,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,15,43,189,10
+    CONTROL         "Пълен протокол (по мрежов номер)",IDC_RADIO_NETNUM,
+                    "Button",BS_AUTORADIOBUTTON,15,55,189,10
+    CONTROL         "Опростен протокол",IDC_RADIO_SIMPLE,"Button",
+                    BS_AUTORADIOBUTTON,15,67,189,10
+    LTEXT           "Логически:",IDC_STATIC_LOGNUM,15,102,57,8
+    LTEXT           "Мрежов номер:",IDC_STATIC_NETNUM,15,102,57,8
+    LTEXT           "Потребител ID:",IDC_STATIC_USER,118,102,52,8
+    LTEXT           "Парола:",IDC_STATIC_PASSWORD,118,120,52,8
+    LTEXT           "Местонахождение:",IDC_STATIC_LOCATION,15,120,57,8
+    LTEXT           "Порт:",IDC_STATIC_PORT,15,138,57,8
+    EDITTEXT        IDC_PORT,74,135,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUMBER,74,99,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_USER,172,99,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PASSWORD,172,117,32,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_LOCATION,74,117,32,14,ES_AUTOHSCROLL
+END
+
+IDD_FORMAT2016 DIALOG DISCARDABLE  0, 0, 220, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Command &Identifiers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List2",IDC_LIST_IDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_EDITLABELS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,7,206,114
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ENCODING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        VERTGUIDE, 15
+        VERTGUIDE, 121
+        VERTGUIDE, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+        HORZGUIDE, 18
+        HORZGUIDE, 29
+        HORZGUIDE, 40
+        HORZGUIDE, 74
+        HORZGUIDE, 138
+        HORZGUIDE, 158
+    END
+
+    IDD_DEPTCODES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DEFCONN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        VERTGUIDE, 15
+        VERTGUIDE, 72
+        VERTGUIDE, 74
+        VERTGUIDE, 106
+        VERTGUIDE, 118
+        VERTGUIDE, 170
+        VERTGUIDE, 172
+        VERTGUIDE, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_FORMAT2016, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 19, 0, 17668, 27412
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Хелп Микро\0"
+            VALUE "FileDescription", "VSU конфигурация на програмата\0"
+            VALUE "FileVersion", "19, 0, 17668, 27412\0"
+            VALUE "InternalName", "vsucfgr\0"
+            VALUE "LegalCopyright", "Копие 2005 Хелп Микро\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsucfgr.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "vsucfg resource Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x402, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "vsucfg"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Сыздай нов документ\nНов"
+    ID_FILE_OPEN            "Отвори документ\nОтвори"
+    ID_FILE_CLOSE           "Затвори документ\nЗатвори"
+    ID_FILE_SAVE            "Сыхрани активния документ\nСыхрани"
+    ID_FILE_SAVE_AS         "Сыхрани активния документ под ново име\nСыхрани като"
+    ID_FILE_PAGE_SETUP      "Промени настойките при печат\nСтраница настройки"
+    ID_FILE_PRINT_SETUP     "Промени принтера или настройките за печат\nПечат настройки"
+    ID_FILE_PRINT           "Печат на активния документ\nПечат"
+    ID_FILE_PRINT_PREVIEW   "Преглед преди печат\nПреглед"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Информация за програмата на екран, версия на програмата \nЗа програмата"
+    ID_APP_EXIT             "Изход от програмата; напомняне за съхранение на документа\nИзход"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Превключване на следващ прозорец\nСледващ"
+    ID_PREV_PANE            "Превключване на предходен прозорец\nПредходен"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Отваряне на друг документ за активен\nНов прозорец"
+    ID_WINDOW_ARRANGE       "Сортиране на иконите на дъното на прозореца\nСортиране на иконите"
+    ID_WINDOW_CASCADE       "Сортираните прозорци ще се припокрият\nКаскадна подредба"
+    ID_WINDOW_TILE_HORZ     "Сортираните прозорци няма да са с припокрити титули\nТитулни прозорци хоризонтално"
+    ID_WINDOW_TILE_VERT     "Сортираните прозорци няма да са с припоктити титули\nТитулни прозорци вертикално"
+    ID_WINDOW_SPLIT         "Разделяне на активния прозорец на квадрати\nРазделяне"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Изтриване на маркираното\nИзтрий"
+    ID_EDIT_CLEAR_ALL       "Изтриване на всичко\nИзтрий всичко"
+    ID_EDIT_COPY            "Копирай маркираното и постави в клипборда\nКопирай"
+    ID_EDIT_CUT             "Изрежи маркираното и постави в клипборда\nИзрежи"
+    ID_EDIT_FIND            "Открий специфичен текст\nТърси"
+    ID_EDIT_PASTE           "Вмъкни информацията от клипборда\nПостави"
+    ID_EDIT_REPEAT          "Повтори последната операция\nПовтори"
+    ID_EDIT_REPLACE         "Заместване на специфичен текс с друг\nЗамести"
+    ID_EDIT_SELECT_ALL      "Маркирана на всичко в документа\nМаркирай всичко"
+    ID_EDIT_UNDO            "Откажи последната операция\nUndo"
+    ID_EDIT_REDO            "Върни предишната отказана операция\nВъзстанови"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Покажи или скрий лентата с инстументите\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Покажи или скрий лентата за статуса\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Промяна на размера на прозореца"
+    ATL_IDS_SCMOVE          "Промяна на позицията на прозореца"
+    ATL_IDS_SCMINIMIZE      "Корегиране на прозореца"
+    ATL_IDS_SCMAXIMIZE      "Корегиране на прозореца до пылния му размер"
+    ATL_IDS_SCNEXTWINDOW    "Ключ кым следва•ия прозорец"
+    ATL_IDS_SCPREVWINDOW    "Ключ кым предходния прозорец"
+    ATL_IDS_SCCLOSE         "Затворете активния прозорец и сыхранете документите"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Вырнете прозореца в нолмалния му размер"
+    ATL_IDS_SCTASKLIST      "Активирайте посочения списык "
+    ATL_IDS_MDICHILD        "Активирайте този прозорец"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Готов"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Отвори този документ"
+    IDS_TITLE               "VSU КОНФИГУРИРАНЕ"
+    IDS_COLHEAD_DEPT        "Департамент"
+    IDS_COLHEAD_CODE        "PLU кодове"
+    IDS_LOGNUM_ABSENT       "Specified logical number is not registered in Session Manager Config and cash register with such logical number is not connected to your computer at this time. This logical number cannot be saved."
+    IDS_COLHEAD_ENTITY      "Entity"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLHEAD_VALUE       "Value"
+    IDS_ENTITY_SALE         "Sale command"
+    IDS_ENTITY_SALECHANGE   "Sale change"
+    IDS_ENTITY_ADISC_STL    "Value discount over subtotal"
+    IDS_ENTITY_ADISC_ITEM   "Value discont over item"
+    IDS_ENTITY_PDISC_STL    "Percentage discount over subtotal"
+    IDS_ENTITY_PDISC_ITEM   "Percentage discount over item"
+    IDS_ENTITY_ENDRCPT      "Close receipt command"
+    IDS_ENTITY_CCARD        "Customer card number"
+    IDS_ENTITY_COMMENT      "Comment line"
+    IDS_ENTITY_SEPARATOR    "Field separator"
+END
+
+#endif    // Bulgarian resources
+/////////////////////////////////////////////////////////////////////////////
+
+

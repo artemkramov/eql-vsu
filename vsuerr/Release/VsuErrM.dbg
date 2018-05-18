@@ -1,0 +1,33 @@
+//
+// This file maps message Id values in to a text string that contains
+// the symbolic name used for the message Id.  Useful for debugging
+// output.
+//
+
+struct {
+    DWORD MessageId;
+    char *SymbolicName;
+} VsuErrMSymbolicNames[] = {
+ (DWORD) st_no_session, "st_no_session",
+ (DWORD) st_syntax_error, "st_syntax_error",
+ (DWORD) st_invalid_plu_code, "st_invalid_plu_code",
+ (DWORD) st_invalid_plu_name, "st_invalid_plu_name",
+ (DWORD) st_invalid_plu_price, "st_invalid_plu_price",
+ (DWORD) st_invalid_plu_amount, "st_invalid_plu_amount",
+ (DWORD) st_invalid_plu_dept, "st_invalid_plu_dept",
+ (DWORD) st_invalid_plu_group, "st_invalid_plu_group",
+ (DWORD) st_invalid_plu_tax, "st_invalid_plu_tax",
+ (DWORD) st_invalid_comment, "st_invalid_comment",
+ (DWORD) st_invalid_payment_kind, "st_invalid_payment_kind",
+ (DWORD) st_invalid_payment_sum, "st_invalid_payment_sum",
+ (DWORD) st_invalid_payment_code, "st_invalid_payment_code",
+ (DWORD) st_invalid_discount_kind, "st_invalid_discount_kind",
+ (DWORD) st_invalid_discount_sum, "st_invalid_discount_sum",
+ (DWORD) st_invalid_inout_kind, "st_invalid_inout_kind",
+ (DWORD) st_invalid_inout_sum, "st_invalid_inout_sum",
+ (DWORD) st_invalid_cmdid, "st_invalid_cmdid",
+ (DWORD) st_invalid_plu_flags, "st_invalid_plu_flags",
+ (DWORD) st_invalid_bin_id, "st_invalid_bin_id",
+ (DWORD) st_invalid_bin_data, "st_invalid_bin_data",
+ (DWORD) 0xFFFFFFFF, NULL
+};

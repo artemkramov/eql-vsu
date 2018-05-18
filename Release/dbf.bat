@@ -1,0 +1,1 @@
+vsu /file RECEIPT.DBF

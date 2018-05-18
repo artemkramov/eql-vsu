@@ -1,0 +1,502 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.9782.0 (751ff853).
+//
+// e:\prj\win\dbc\vsu\vsucfg\release\l2srv.tlh
+//
+// C++ source equivalent of Win32 type library l2srv.tlb
+// compiler-generated file created 07/27/16 at 19:49:17 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace L2SRVLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("07773e30-857e-11d3-9b33-008048c5fdf8"))
+/* interface */ IHcStateEvents;
+struct _idlSerNum;
+struct __declspec(uuid("f0745770-99d1-11d3-9b60-008048c5fdf8"))
+/* interface */ IHcCashStateEvents;
+struct __declspec(uuid("3ce88060-8581-11d3-9b33-008048c5fdf8"))
+/* interface */ IHcStatisticsEvents;
+struct __declspec(uuid("e43ac281-cb3f-11d2-96d9-008048c5fdf8"))
+/* interface */ IHcSession;
+struct __declspec(uuid("e43ac282-cb3f-11d2-96d9-008048c5fdf8"))
+/* interface */ IHcCash;
+struct _idlASLAV_Profile;
+struct __declspec(uuid("e43ac283-cb3f-11d2-96d9-008048c5fdf8"))
+/* interface */ IHcCashes;
+struct __declspec(uuid("8ff7de60-8dec-11d3-9b4b-008048c5fdf8"))
+/* interface */ IHcCashes2;
+struct tagcash_param;
+struct __declspec(uuid("e43ac284-cb3f-11d2-96d9-008048c5fdf8"))
+/* interface */ IHcCreateSessionLog;
+struct __declspec(uuid("600444f0-9081-11d3-9b4d-008048c5fdf8"))
+/* interface */ IHcCreateSessionLog2;
+struct __declspec(uuid("e43ac285-cb3f-11d2-96d9-008048c5fdf8"))
+/* interface */ IHcCreateSessionFis;
+struct __declspec(uuid("72c3f4e0-9081-11d3-9b4d-008048c5fdf8"))
+/* interface */ IHcCreateSessionFis2;
+struct /* coclass */ HcSessionManager;
+struct __declspec(uuid("908c1cf0-a10c-11d3-9b6a-008048c5fdf8"))
+/* interface */ IHcPositionEvents;
+struct /* coclass */ HcCfgManager;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IHcStateEvents, __uuidof(IHcStateEvents));
+_COM_SMARTPTR_TYPEDEF(IHcCashStateEvents, __uuidof(IHcCashStateEvents));
+_COM_SMARTPTR_TYPEDEF(IHcStatisticsEvents, __uuidof(IHcStatisticsEvents));
+_COM_SMARTPTR_TYPEDEF(IHcSession, __uuidof(IHcSession));
+_COM_SMARTPTR_TYPEDEF(IHcCash, __uuidof(IHcCash));
+_COM_SMARTPTR_TYPEDEF(IHcCashes, __uuidof(IHcCashes));
+_COM_SMARTPTR_TYPEDEF(IHcCashes2, __uuidof(IHcCashes2));
+_COM_SMARTPTR_TYPEDEF(IHcCreateSessionLog, __uuidof(IHcCreateSessionLog));
+_COM_SMARTPTR_TYPEDEF(IHcCreateSessionLog2, __uuidof(IHcCreateSessionLog2));
+_COM_SMARTPTR_TYPEDEF(IHcCreateSessionFis, __uuidof(IHcCreateSessionFis));
+_COM_SMARTPTR_TYPEDEF(IHcCreateSessionFis2, __uuidof(IHcCreateSessionFis2));
+_COM_SMARTPTR_TYPEDEF(IHcPositionEvents, __uuidof(IHcPositionEvents));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("07773e30-857e-11d3-9b33-008048c5fdf8"))
+IHcStateEvents : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Connected (
+        struct _idlSerNum SerNum,
+        unsigned long LogNum );
+    HRESULT OnOff (
+        long bOn );
+    HRESULT Fatal ( );
+    HRESULT Arrive ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Connected (
+        struct _idlSerNum SerNum,
+        unsigned long LogNum ) = 0;
+    virtual HRESULT __stdcall raw_OnOff (
+        long bOn ) = 0;
+    virtual HRESULT __stdcall raw_Fatal ( ) = 0;
+    virtual HRESULT __stdcall raw_Arrive ( ) = 0;
+};
+
+struct _idlSerNum
+{
+    short letters;
+    long number;
+};
+
+struct __declspec(uuid("f0745770-99d1-11d3-9b60-008048c5fdf8"))
+IHcCashStateEvents : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Business (
+        long position,
+        long sesscount,
+        long objcount );
+    HRESULT Conflict (
+        long position,
+        unsigned long savedret );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Business (
+        long position,
+        long sesscount,
+        long objcount ) = 0;
+    virtual HRESULT __stdcall raw_Conflict (
+        long position,
+        unsigned long savedret ) = 0;
+};
+
+struct __declspec(uuid("3ce88060-8581-11d3-9b33-008048c5fdf8"))
+IHcStatisticsEvents : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Changed (
+        long position );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Changed (
+        long position ) = 0;
+};
+
+struct __declspec(uuid("e43ac281-cb3f-11d2-96d9-008048c5fdf8"))
+IHcSession : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Read (
+        unsigned char * pv,
+        unsigned long cb,
+        unsigned long * pcbRead,
+        unsigned long tmo );
+    HRESULT Write (
+        unsigned char * pv,
+        unsigned long cb,
+        unsigned long * pcbWritten );
+    HRESULT Reset ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Read (
+        unsigned char * pv,
+        unsigned long cb,
+        unsigned long * pcbRead,
+        unsigned long tmo ) = 0;
+    virtual HRESULT __stdcall raw_Write (
+        unsigned char * pv,
+        unsigned long cb,
+        unsigned long * pcbWritten ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+};
+
+struct __declspec(uuid("e43ac282-cb3f-11d2-96d9-008048c5fdf8"))
+IHcCash : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateSession (
+        struct IHcSession * * psession );
+    HRESULT Perf (
+        struct _idlASLAV_Profile * PerfData );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CreateSession (
+        struct IHcSession * * psession ) = 0;
+    virtual HRESULT __stdcall raw_Perf (
+        struct _idlASLAV_Profile * PerfData ) = 0;
+};
+
+struct _idlASLAV_Profile
+{
+    unsigned long dwIncrement;
+    unsigned long dwpfAllOut;
+    unsigned long dwpfAllIn;
+    unsigned long dwpfDataOut;
+    unsigned long dwpfDataIn;
+    unsigned long dwpfIdle;
+    unsigned long dwpfReqst;
+    unsigned long dwpfGetErr;
+    unsigned long dwpfPutErr;
+    unsigned long dwpfTime;
+    int open_session;
+    int close_session;
+    int queryes;
+    int on;
+    int connect;
+    int off;
+    int errors;
+    int raw_pack;
+    int data_pack;
+    int success_pack;
+    int error_pack;
+    int data_bytes_in;
+    int data_bytes_out;
+};
+
+struct __declspec(uuid("e43ac283-cb3f-11d2-96d9-008048c5fdf8"))
+IHcCashes : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Count (
+        unsigned long * pCount );
+    HRESULT Item (
+        unsigned long Index,
+        struct IHcCash * * pcash );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Count (
+        unsigned long * pCount ) = 0;
+    virtual HRESULT __stdcall raw_Item (
+        unsigned long Index,
+        struct IHcCash * * pcash ) = 0;
+};
+
+struct __declspec(uuid("8ff7de60-8dec-11d3-9b4b-008048c5fdf8"))
+IHcCashes2 : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Count (
+        unsigned long * pCount );
+    HRESULT Item (
+        struct IHcCash * * pcash );
+    HRESULT AutoDetect ( );
+    HRESULT Move (
+        long position );
+    HRESULT Business (
+        long * sesscount,
+        long * objcount );
+    unsigned long Saved ( );
+    HRESULT Save ( );
+    HRESULT Delete ( );
+    HRESULT Insert (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param );
+    HRESULT First ( );
+    HRESULT Next ( );
+    HRESULT GetParameters (
+        unsigned char * Com,
+        unsigned char * Adr,
+        struct tagcash_param * param );
+    HRESULT SetParameters (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Count (
+        unsigned long * pCount ) = 0;
+    virtual HRESULT __stdcall raw_Item (
+        struct IHcCash * * pcash ) = 0;
+    virtual HRESULT __stdcall raw_AutoDetect ( ) = 0;
+    virtual HRESULT __stdcall raw_Move (
+        long position ) = 0;
+    virtual HRESULT __stdcall raw_Business (
+        long * sesscount,
+        long * objcount ) = 0;
+    virtual HRESULT __stdcall raw_Saved (
+        unsigned long * psaved ) = 0;
+    virtual HRESULT __stdcall raw_Save ( ) = 0;
+    virtual HRESULT __stdcall raw_Delete ( ) = 0;
+    virtual HRESULT __stdcall raw_Insert (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param ) = 0;
+    virtual HRESULT __stdcall raw_First ( ) = 0;
+    virtual HRESULT __stdcall raw_Next ( ) = 0;
+    virtual HRESULT __stdcall raw_GetParameters (
+        unsigned char * Com,
+        unsigned char * Adr,
+        struct tagcash_param * param ) = 0;
+    virtual HRESULT __stdcall raw_SetParameters (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param ) = 0;
+};
+
+struct tagcash_param
+{
+    unsigned short baud;
+    unsigned int ser_num;
+    unsigned int tim_req;
+    unsigned int tim_idle;
+    unsigned int tim_ack;
+    unsigned int tim_sleep;
+    unsigned short log_num;
+    unsigned char max_pack;
+    unsigned long fieldflags;
+    LPWSTR name;
+};
+
+struct __declspec(uuid("e43ac284-cb3f-11d2-96d9-008048c5fdf8"))
+IHcCreateSessionLog : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateSession (
+        unsigned long LogNum,
+        struct IHcSession * * psession );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CreateSession (
+        unsigned long LogNum,
+        struct IHcSession * * psession ) = 0;
+};
+
+struct __declspec(uuid("600444f0-9081-11d3-9b4d-008048c5fdf8"))
+IHcCreateSessionLog2 : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateSession (
+        unsigned long LogNum,
+        IUnknown * sink,
+        struct IHcSession * * psession );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CreateSession (
+        unsigned long LogNum,
+        IUnknown * sink,
+        struct IHcSession * * psession ) = 0;
+};
+
+struct __declspec(uuid("e43ac285-cb3f-11d2-96d9-008048c5fdf8"))
+IHcCreateSessionFis : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateSession (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param,
+        struct IHcSession * * psession );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CreateSession (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param,
+        struct IHcSession * * psession ) = 0;
+};
+
+struct __declspec(uuid("72c3f4e0-9081-11d3-9b4d-008048c5fdf8"))
+IHcCreateSessionFis2 : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateSession (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param,
+        IUnknown * sink,
+        struct IHcSession * * psession );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_CreateSession (
+        unsigned char Com,
+        unsigned char Adr,
+        struct tagcash_param * param,
+        IUnknown * sink,
+        struct IHcSession * * psession ) = 0;
+};
+
+enum tagretcodes
+{
+    src_ok = 0,
+    src_noinit = 1,
+    src_off = 2,
+    src_flush = 3,
+    src_reinit = 4,
+    src_fatal = 5,
+    src_on = 6
+};
+
+enum tagflags
+{
+    flSerNum = 1,
+    flBaud = 2,
+    flTimReq = 4,
+    flTimIdle = 8,
+    flTimAck = 16,
+    flTimSleep = 32,
+    flMaxPack = 64
+};
+
+enum tagstatebits
+{
+    sbSaved = 1,
+    sbLNConflict = 2,
+    sbSNConflict = 4
+};
+
+struct __declspec(uuid("e43ac291-cb3f-11d2-96d9-008048c5fdf8"))
+HcSessionManager;
+    // interface IHcCreateSessionLog
+    // interface IHcCreateSessionLog2
+    // interface IHcCreateSessionFis
+    // interface IHcCreateSessionFis2
+    // [ default ] interface IHcCashes
+    // [ source ] interface IHcCashStateEvents
+    // [ source ] interface IHcPositionEvents
+    // [ default, source ] interface IHcStatisticsEvents
+
+struct __declspec(uuid("908c1cf0-a10c-11d3-9b6a-008048c5fdf8"))
+IHcPositionEvents : IUnknown
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT PositionChanged (
+        long position );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_PositionChanged (
+        long position ) = 0;
+};
+
+struct __declspec(uuid("7348cb57-990f-11d3-9b5f-008048c5fdf8"))
+HcCfgManager;
+    // [ default ] interface IHcCashes2
+
+//
+// Wrapper method implementations
+//
+
+#include "e:\prj\win\dbc\vsu\vsucfg\release\l2srv.tli"
+
+} // namespace L2SRVLib
+
+#pragma pack(pop)

@@ -1,0 +1,4498 @@
+MessageIdTypedef=DWORD
+
+SeverityNames = ( 
+			EQLSeverity = 0x0
+)
+
+FacilityNames = ( 
+			EQLFacility   = 0x0
+)
+LanguageNames = ( Russian = 0x419:EQLRUS)
+LanguageNames = ( English = 0x409:EQLENG)
+LanguageNames = ( Ukrainian = 0x422:EQLUKR)
+
+MessageId = TBL_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_Time_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_Time_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = TBL_WBar
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Весовые ШК%0
+.
+Language = English
+Weighted BarCodes%0
+.
+Language = Ukrainian
+Вагові ШК%0
+.
+
+MessageId = FLD_WBar_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+N%0
+.
+Language = English
+N%0
+.
+Language = Ukrainian
+N%0
+.
+
+MessageId = FLD_WBar_BCode
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Постоянная%0
+.
+Language = English
+Constant%0
+.
+Language = Ukrainian
+Постiйна%0
+.
+
+MessageId = FLD_WBar_BFltr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фильтр%0
+.
+Language = English
+Filter%0
+.
+Language = Ukrainian
+Фільтр%0
+.
+
+MessageId = TBL_QUser
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Рассылка запросов%0
+.
+Language = English
+Queries map%0
+.
+Language = Ukrainian
+Мапа запитів%0
+.
+
+MessageId = FLD_QUser_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+N запроса%0
+.
+Language = English
+Query ID%0
+.
+Language = Ukrainian
+N запиту%0
+.
+
+MessageId = FLD_QUser_User
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кому%0
+.
+Language = English
+User%0
+.
+Language = Ukrainian
+Кому%0
+.
+
+MessageId = TBL_Com
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Интерфейсы%0
+.
+Language = English
+Interfaces%0
+.
+Language = Ukrainian
+Інтерфейси%0
+.
+
+MessageId = FLD_Com_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+N порта%0
+.
+Language = English
+PortN%0
+.
+Language = Ukrainian
+N порта%0
+.
+
+MessageId = FLD_Com_Device
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Устройство%0
+.
+Language = English
+Device%0
+.
+Language = Ukrainian
+Пристрій%0
+.
+
+MessageId = FLD_Com_Baud
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Скорость%0
+.
+Language = English
+Speed%0
+.
+Language = Ukrainian
+Швидкість%0
+.
+
+MessageId = FLD_Com_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметр%0
+.
+Language = English
+Parameter%0
+.
+Language = Ukrainian
+Параметр%0
+.
+
+MessageId = TBL_Net
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметры сети%0
+.
+Language = English
+Network parameters%0
+.
+Language = Ukrainian
+Параметри мережі%0
+.
+
+MessageId = FLD_Net_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Индекс%0
+.
+Language = English
+Index%0
+.
+Language = Ukrainian
+Індекс%0
+.
+
+MessageId = FLD_Net_NtEnb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Разрешено%0
+.
+Language = English
+Enabled%0
+.
+Language = Ukrainian
+Дозволено%0
+.
+
+MessageId = FLD_Net_NtNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сетевой №%0
+.
+Language = English
+Net No%0
+.
+Language = Ukrainian
+№ у мережі%0
+.
+
+MessageId = FLD_Net_NtBaud
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Скорость%0
+.
+Language = English
+Speed%0
+.
+Language = Ukrainian
+Швидкість%0
+.
+
+MessageId = FLD_Net_Zapros
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запросы%0
+.
+Language = English
+Queries%0
+.
+Language = Ukrainian
+Запити%0
+.
+
+MessageId = FLD_Net_ZpZ1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Z1%0
+.
+Language = English
+Z1%0
+.
+Language = Ukrainian
+Z1%0
+.
+
+MessageId = FLD_Net_ZpZ2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Z2%0
+.
+Language = English
+Z2%0
+.
+Language = Ukrainian
+Z2%0
+.
+
+MessageId = FLD_Net_ZpPl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Товар%0
+.
+Language = English
+PLU%0
+.
+Language = Ukrainian
+Товар%0
+.
+
+MessageId = FLD_Net_ZpOp
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оплата%0
+.
+Language = English
+Pay%0
+.
+Language = Ukrainian
+Оплата%0
+.
+
+MessageId = FLD_Net_FsPr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ФП%0
+.
+Language = English
+FP%0
+.
+Language = Ukrainian
+ФП%0
+.
+
+MessageId = FLD_Net_LgNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Лог №%0
+.
+Language = English
+Log No%0
+.
+Language = Ukrainian
+Лог №%0
+.
+
+MessageId = FLD_Net_WesBar
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кол-во вес. ШК%0
+.
+Language = English
+WBar count%0
+.
+Language = Ukrainian
+Кільк. ваг. ШК%0
+.
+
+MessageId = FLD_Net_NetPsw
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сеть%0
+.
+Language = English
+Net%0
+.
+Language = Ukrainian
+Мережа%0
+.
+
+MessageId = FLD_Net_COMPsw
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Язык%0
+.
+Language = English
+Language%0
+.
+Language = Ukrainian
+Мова%0
+.
+
+MessageId = TBL_Chk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид чека%0
+.
+Language = English
+Receipt view%0
+.
+Language = Ukrainian
+Вид чеку%0
+.
+
+MessageId = FLD_Chk_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Chk_NmFeed
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Прогон%0
+.
+Language = English
+Feed%0
+.
+Language = Ukrainian
+Прогон%0
+.
+
+MessageId = FLD_Chk_LenHdr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Длина заг.%0
+.
+Language = English
+HdrLen%0
+.
+Language = Ukrainian
+Довжина заг.%0
+.
+
+MessageId = FLD_Chk_LenFtr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Длина оконч.%0
+.
+Language = English
+FtrLen%0
+.
+Language = Ukrainian
+Довжина зак.%0
+.
+
+MessageId = FLD_Chk_NoKass
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Без кассира%0
+.
+Language = English
+No oper%0
+.
+Language = Ukrainian
+Без касиру%0
+.
+
+MessageId = TBL_Hdr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Заголовок%0
+.
+Language = English
+Header%0
+.
+Language = Ukrainian
+Заголовок%0
+.
+
+MessageId = FLD_Hdr_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Строка%0
+.
+Language = English
+Line%0
+.
+Language = Ukrainian
+Строка%0
+.
+
+MessageId = FLD_Hdr_Shir
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Размер%0
+.
+Language = English
+Size%0
+.
+Language = Ukrainian
+Розмiр%0
+.
+
+MessageId = FLD_Hdr_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметр%0
+.
+Language = English
+Parameter%0
+.
+Language = Ukrainian
+Параметр%0
+.
+
+MessageId = FLD_Hdr_Line
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Текст%0
+.
+Language = English
+Text%0
+.
+Language = Ukrainian
+Текст%0
+.
+
+MessageId = TBL_Ftr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Окончание%0
+.
+Language = English
+Footer%0
+.
+Language = Ukrainian
+Закінчення%0
+.
+
+MessageId = FLD_Ftr_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Строка%0
+.
+Language = English
+Line%0
+.
+Language = Ukrainian
+Строка%0
+.
+
+MessageId = FLD_Ftr_Shir
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Размер%0
+.
+Language = English
+Size%0
+.
+Language = Ukrainian
+Розмiр%0
+.
+
+MessageId = FLD_Ftr_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметр%0
+.
+Language = English
+Parameter%0
+.
+Language = Ukrainian
+Параметр%0
+.
+
+MessageId = FLD_Ftr_Line
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Текст%0
+.
+Language = English
+Text%0
+.
+Language = Ukrainian
+Текст%0
+.
+
+MessageId = TBL_Oper
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Операторы%0
+.
+Language = English
+Operators%0
+.
+Language = Ukrainian
+Оператори%0
+.
+
+MessageId = FLD_Oper_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Oper_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Имя%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Ім'я%0
+.
+
+MessageId = FLD_Oper_Pswd
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Пароль%0
+.
+Language = English
+Password%0
+.
+Language = Ukrainian
+Пароль%0
+.
+
+MessageId = TBL_Dep
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Отделы%0
+.
+Language = English
+Departments%0
+.
+Language = Ukrainian
+Відділи%0
+.
+
+MessageId = FLD_Dep_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Dep_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Название%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = TBL_Grp
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группы%0
+.
+Language = English
+Groups%0
+.
+Language = Ukrainian
+Групи%0
+.
+
+MessageId = FLD_Grp_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Grp_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Название%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = TBL_Nac
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Наценки и скидки%0
+.
+Language = English
+Discounts and extra charges%0
+.
+Language = Ukrainian
+Знижки та націнки%0
+.
+
+MessageId = FLD_Nac_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Nac_NcDsb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запрет+%0
+.
+Language = English
+Disable+%0
+.
+Language = Ukrainian
+Заборона+%0
+.
+
+MessageId = FLD_Nac_Nac
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Значение+%0
+.
+Language = English
+Value+%0
+.
+Language = Ukrainian
+Розмiр+%0
+.
+
+MessageId = FLD_Nac_SkDsb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запрет-%0
+.
+Language = English
+Disable-%0
+.
+Language = Ukrainian
+Заборона-%0
+.
+
+MessageId = FLD_Nac_Skd
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Значение-%0
+.
+Language = English
+Value-%0
+.
+Language = Ukrainian
+Розмiр-%0
+.
+
+MessageId = FLD_Nac_PNDsb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запрет+%%%0
+.
+Language = English
+Disable+%%%0
+.
+Language = Ukrainian
+Заборона+%%%0
+.
+
+MessageId = FLD_Nac_PNac
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Значение+%%%0
+.
+Language = English
+Value+%%%0
+.
+Language = Ukrainian
+Розмiр+%%%0
+.
+
+MessageId = FLD_Nac_PSDsb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запрет-%%%0
+.
+Language = English
+Disable-%%%0
+.
+Language = Ukrainian
+Заборона-%%%0
+.
+
+MessageId = FLD_Nac_PSkd
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Значение-%%%0
+.
+Language = English
+Value-%%%0
+.
+Language = Ukrainian
+Розмiр-%%%0
+.
+
+MessageId = TBL_Kup
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Купюры%0
+.
+Language = English
+Banknote%0
+.
+Language = Ukrainian
+Купюри%0
+.
+
+MessageId = FLD_Kup_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Kup_Nom
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Номинал%0
+.
+Language = English
+Value%0
+.
+Language = Ukrainian
+Номiнал%0
+.
+
+MessageId = TBL_Opl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оплаты%0
+.
+Language = English
+Payments%0
+.
+Language = Ukrainian
+Розплати%0
+.
+
+MessageId = FLD_Opl_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Opl_Enbl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Есть%0
+.
+Language = English
+Used%0
+.
+Language = Ukrainian
+Дозв.%0
+.
+
+MessageId = FLD_Opl_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметры%0
+.
+Language = English
+Parameters%0
+.
+Language = Ukrainian
+Параметри%0
+.
+
+MessageId = FLD_Opl_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Название%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = FLD_Opl_Sdac
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сдача%0
+.
+Language = English
+Rest%0
+.
+Language = Ukrainian
+Здача%0
+.
+
+MessageId = FLD_Opl_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Клиент%0
+.
+Language = English
+Client%0
+.
+Language = Ukrainian
+Клiєнт%0
+.
+
+MessageId = FLD_Opl_Zapr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запрос%0
+.
+Language = English
+Query%0
+.
+Language = Ukrainian
+Запит%0
+.
+
+MessageId = TBL_Adm
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Разное%0
+.
+Language = English
+Miscellaneous%0
+.
+Language = Ukrainian
+Різне%0
+.
+
+MessageId = FLD_Adm_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Adm_OtPar
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ПарольO%0
+.
+Language = English
+PswR%0
+.
+Language = Ukrainian
+ПарольЗ%0
+.
+
+MessageId = FLD_Adm_PgPar
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ПарольП%0
+.
+Language = English
+PswP%0
+.
+Language = Ukrainian
+ПарольП%0
+.
+
+MessageId = FLD_Adm_BgDat
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Нач.дата%0
+.
+Language = English
+BegDate%0
+.
+Language = Ukrainian
+Поч.дата%0
+.
+
+MessageId = FLD_Adm_EnDat
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кон.дата%0
+.
+Language = English
+EndDate%0
+.
+Language = Ukrainian
+Кiн.дата%0
+.
+
+MessageId = FLD_Adm_NOpr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кассиров%0
+.
+Language = English
+Operators%0
+.
+Language = Ukrainian
+Касирів%0
+.
+
+MessageId = FLD_Adm_CurTim
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_Adm_PrContr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Контрастность%0
+.
+Language = English
+Contrast%0
+.
+Language = Ukrainian
+Контрастність%0
+.
+
+MessageId = FLD_Adm_PrEqual
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Выравнивание%0
+.
+Language = English
+Alignment%0
+.
+Language = Ukrainian
+Вирівнювання%0
+.
+
+MessageId = FLD_Adm_Feed
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Прогон%0
+.
+Language = English
+Feed%0
+.
+Language = Ukrainian
+Прогон%0
+.
+
+MessageId = FLD_Adm_Intrv
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Местный%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Мiсцевий%0
+.
+
+MessageId = TBL_Flg
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флажки%0
+.
+Language = English
+Flags%0
+.
+Language = Ukrainian
+Прапорці%0
+.
+
+MessageId = FLD_Flg_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Flg_Ukr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Язык%0
+.
+Language = English
+Language%0
+.
+Language = Ukrainian
+Мова%0
+.
+
+MessageId = FLD_Flg_Safe
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сейф%0
+.
+Language = English
+Safe%0
+.
+Language = Ukrainian
+Сейф%0
+.
+
+MessageId = FLD_Flg_RDbl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дубль отчетов%0
+.
+Language = English
+Mirr. reps%0
+.
+Language = Ukrainian
+Дубль звiтiв%0
+.
+
+MessageId = FLD_Flg_SKol
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запас%0
+.
+Language = English
+Amnt%0
+.
+Language = Ukrainian
+Запас%0
+.
+
+MessageId = FLD_Flg_PArt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Прогр.%0
+.
+Language = English
+Prog%0
+.
+Language = Ukrainian
+Прогр.%0
+.
+
+MessageId = FLD_Flg_SDrb
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дробность%0
+.
+Language = English
+Frac%0
+.
+Language = Ukrainian
+Вагова кiльк.%0
+.
+
+MessageId = FLD_Flg_CChk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Копия%0
+.
+Language = English
+Copy%0
+.
+Language = Ukrainian
+Копiя%0
+.
+
+MessageId = FLD_Flg_DKwt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Купюры%0
+.
+Language = English
+Banknote%0
+.
+Language = Ukrainian
+Купюри%0
+.
+
+MessageId = FLD_Flg_LEDSvet
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Подсветка%0
+.
+Language = English
+Highlight%0
+.
+Language = Ukrainian
+Пiдсвiтка%0
+.
+
+MessageId = FLD_Flg_Lang
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Язык%0
+.
+Language = English
+Language%0
+.
+Language = Ukrainian
+Мова%0
+.
+
+MessageId = FLD_Flg_AutoOff
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Авто выкл.%0
+.
+Language = English
+Power safe%0
+.
+Language = Ukrainian
+Авто вимк%0
+.
+
+MessageId = FLD_Flg_PrintOff
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Без печати%0
+.
+Language = English
+No print%0
+.
+Language = Ukrainian
+Без друку%0
+.
+
+MessageId = FLD_Flg_Flg1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флг1%0
+.
+Language = English
+Flg1%0
+.
+Language = Ukrainian
+Прап1%0
+.
+
+MessageId = FLD_Flg_Flg2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флг2%0
+.
+Language = English
+Flg2%0
+.
+Language = Ukrainian
+Прап2%0
+.
+
+MessageId = FLD_Flg_Flag
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флаги%0
+.
+Language = English
+Flags%0
+.
+Language = Ukrainian
+Прапорцi%0
+.
+
+MessageId = FLD_Flg_Feed
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Прогон%0
+.
+Language = English
+Feed%0
+.
+Language = Ukrainian
+Прогон%0
+.
+
+MessageId = TBL_Post
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Почта%0
+.
+Language = English
+Post%0
+.
+Language = Ukrainian
+Почта%0
+.
+
+MessageId = FLD_Post_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Post_PostalNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ отправления%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ вiдправлення%0
+.
+
+MessageId = FLD_Post_RemitNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ перевода%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ переводу%0
+.
+
+MessageId = FLD_Post_ShiftNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ Z2%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ Z2%0
+.
+
+MessageId = FLD_Post_Index
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Индекс%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Iндекс%0
+.
+
+MessageId = FLD_Post_KGP
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+КГП%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+КГП%0
+.
+
+MessageId = FLD_Post_X11Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ 11A%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ 11A%0
+.
+
+MessageId = FLD_Post_Z4Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ 11%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ 11A%0
+.
+
+MessageId = FLD_Post_ShiftDate
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = TBL_Tax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налоги%0
+.
+Language = English
+Taxes%0
+.
+Language = Ukrainian
+Податки%0
+.
+
+MessageId = FLD_Tax_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Tax_Prc
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ставка%0
+.
+Language = English
+Value%0
+.
+Language = Ukrainian
+Ставка%0
+.
+
+MessageId = TBL_Fsk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фискальные номера%0
+.
+Language = English
+Fiscal numbers%0
+.
+Language = Ukrainian
+Фіскальні номери%0
+.
+
+MessageId = FLD_Fsk_FisSign
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Буквы%0
+.
+Language = English
+Letters%0
+.
+Language = Ukrainian
+Лiтери%0
+.
+
+MessageId = FLD_Fsk_FNumber
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фискальный%0
+.
+Language = English
+Fiscal%0
+.
+Language = Ukrainian
+Фiскальний%0
+.
+
+MessageId = FLD_Fsk_FisNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фискальный%0
+.
+Language = English
+Fiscal%0
+.
+Language = Ukrainian
+Фіскальний%0
+.
+
+MessageId = FLD_Fsk_NlgNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налоговый%0
+.
+Language = English
+Payer%0
+.
+Language = Ukrainian
+Налоговий%0
+.
+
+MessageId = FLD_Fsk_NumPnt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Поз. точки%0
+.
+Language = English
+Precision%0
+.
+Language = Ukrainian
+Поз. крапки%0
+.
+
+MessageId = FLD_Fsk_NumChk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Чеков%0
+.
+Language = English
+Receipts%0
+.
+Language = Ukrainian
+Чеків%0
+.
+
+MessageId = TBL_PLU
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Товары%0
+.
+Language = English
+PLU%0
+.
+Language = Ukrainian
+Товари%0
+.
+
+MessageId = FLD_PLU_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Закладка%0
+.
+Language = English
+Bookmark%0
+.
+Language = Ukrainian
+Закладка%0
+.
+
+MessageId = FLD_PLU_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Код%0
+.
+Language = English
+Code%0
+.
+Language = Ukrainian
+Код%0
+.
+
+MessageId = FLD_PLU_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Наименование%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = FLD_PLU_Cen
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Цена%0
+.
+Language = English
+Price%0
+.
+Language = Ukrainian
+Ціна%0
+.
+
+MessageId = FLD_PLU_Dep
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Отдел%0
+.
+Language = English
+Department%0
+.
+Language = Ukrainian
+Відділ%0
+.
+
+MessageId = FLD_PLU_Grp
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа%0
+.
+Language = English
+Group%0
+.
+Language = Ukrainian
+Група%0
+.
+
+MessageId = FLD_PLU_Tax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налог%0
+.
+Language = English
+Tax%0
+.
+Language = Ukrainian
+Податок%0
+.
+
+MessageId = FLD_PLU_Kol
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Количество%0
+.
+Language = English
+Quantity%0
+.
+Language = Ukrainian
+Кількість%0
+.
+
+MessageId = FLD_PLU_Flg
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флаги%0
+.
+Language = English
+Flags%0
+.
+Language = Ukrainian
+Прапорці%0
+.
+
+MessageId = TBL_Dir
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Клавиши%0
+.
+Language = English
+Accelerators%0
+.
+Language = Ukrainian
+Клавіши%0
+.
+
+MessageId = FLD_Dir_Klav
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Клавиша%0
+.
+Language = English
+Key%0
+.
+Language = Ukrainian
+Клавіша%0
+.
+
+MessageId = FLD_Dir_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Товар%0
+.
+Language = English
+Item%0
+.
+Language = Ukrainian
+Товар%0
+.
+
+MessageId = FLD_Dir_Odin
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Чек%0
+.
+Language = English
+Receipt%0
+.
+Language = Ukrainian
+Чек%0
+.
+
+MessageId = FLD_Empt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = FLD_Bad
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+%!%0
+.
+Language = English
+%!%0
+.
+Language = Ukrainian
+%!%0
+.
+
+MessageId = FLD_ZRep_Empt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = FLD_ZRep_NZRep
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ Z%0
+.
+Language = English
+ZNo%0
+.
+Language = Ukrainian
+№ Z%0
+.
+
+MessageId = FLD_ZRep_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время Z%0
+.
+Language = English
+Time Z%0
+.
+Language = Ukrainian
+Час Z%0
+.
+
+MessageId = FLD_ZRep_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата Z%0
+.
+Language = English
+Date Z%0
+.
+Language = Ukrainian
+Дата Z%0
+.
+
+MessageId = FLD_ZRep_BegRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Начало Z%0
+.
+Language = English
+Start Z%0
+.
+Language = Ukrainian
+Початок Z%0
+.
+
+MessageId = FLD_ZRep_Print
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Z выдан%0
+.
+Language = English
+Z out%0
+.
+Language = Ukrainian
+Z виданий%0
+.
+
+MessageId = FLD_ZLbl_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид отч%0
+.
+Language = English
+Rep kind%0
+.
+Language = Ukrainian
+Вид зв.%0
+.
+
+MessageId = FLD_ZLbl_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время отч%0
+.
+Language = English
+Rep time%0
+.
+Language = Ukrainian
+Час зв%0
+.
+
+MessageId = FLD_ZLbl_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата отч.%0
+.
+Language = English
+Rep date%0
+.
+Language = Ukrainian
+Дата зв%0
+.
+
+MessageId = FLD_ZOpr_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид отч%0
+.
+Language = English
+Rep kind%0
+.
+Language = Ukrainian
+Вид зв.%0
+.
+
+MessageId = FLD_ZOpr_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время отч%0
+.
+Language = English
+Rep time%0
+.
+Language = Ukrainian
+Час зв%0
+.
+
+MessageId = FLD_ZOpr_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата отч.%0
+.
+Language = English
+Rep date%0
+.
+Language = Ukrainian
+Дата зв%0
+.
+
+MessageId = FLD_ZOpr_NOpr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кассир%0
+.
+Language = English
+Oper%0
+.
+Language = Ukrainian
+Касир%0
+.
+
+MessageId = FLD_Smen_Empt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = FLD_Smen_NKass
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оператор%0
+.
+Language = English
+Cashier%0
+.
+Language = Ukrainian
+Оператор%0
+.
+
+MessageId = FLD_Smen_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Начало см%0
+.
+Language = English
+Shift time%0
+.
+Language = Ukrainian
+Початок зм%0
+.
+
+MessageId = FLD_Smen_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата см%0
+.
+Language = English
+Shift date%0
+.
+Language = Ukrainian
+Дата зм%0
+.
+
+MessageId = FLD_Check_NKass
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оператор%0
+.
+Language = English
+Cashier%0
+.
+Language = Ukrainian
+Оператор%0
+.
+
+MessageId = FLD_Check_NCheck
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ч%0
+.
+Language = English
+RecNo%0
+.
+Language = Ukrainian
+№ч%0
+.
+
+MessageId = FLD_Check_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время ч%0
+.
+Language = English
+RecTime%0
+.
+Language = Ukrainian
+Час ч%0
+.
+
+MessageId = FLD_Check_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата ч%0
+.
+Language = English
+RecDate%0
+.
+Language = Ukrainian
+Дата ч%0
+.
+
+MessageId = FLD_Check_BegRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Нач. ч%0
+.
+Language = English
+RecStart%0
+.
+Language = Ukrainian
+Поч. ч%0
+.
+
+MessageId = FLD_Check_Print
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Выведен%0
+.
+Language = English
+Out%0
+.
+Language = Ukrainian
+Виведено%0
+.
+
+MessageId = FLD_Void_IDVoid
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид отмены%0
+.
+Language = English
+Void kind%0
+.
+Language = Ukrainian
+Вид відміни%0
+.
+
+MessageId = FLD_Void_BegRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Начало%0
+.
+Language = English
+begin%0
+.
+Language = Ukrainian
+Початок%0
+.
+
+MessageId = FLD_Void_EndRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Конец%0
+.
+Language = English
+end%0
+.
+Language = Ukrainian
+Кінець%0
+.
+
+MessageId = FLD_Void_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Code_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Код товара%0
+.
+Language = English
+Item code%0
+.
+Language = Ukrainian
+Код товара%0
+.
+
+MessageId = FLD_Qty_Empt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = FLD_Qty_Kol
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Количество%0
+.
+Language = English
+Quantity%0
+.
+Language = Ukrainian
+Кількість%0
+.
+
+MessageId = FLD_Qty_Cen
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Цена%0
+.
+Language = English
+Price%0
+.
+Language = Ukrainian
+Ціна%0
+.
+
+MessageId = FLD_Prod_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ссылка на код%0
+.
+Language = English
+Item reference%0
+.
+Language = Ukrainian
+Посилання на код%0
+.
+
+MessageId = FLD_Prod_Kol
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Количество%0
+.
+Language = English
+Quantity%0
+.
+Language = Ukrainian
+Кількість%0
+.
+
+MessageId = FLD_Prod_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Prod_GrpDep
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа и отдел%0
+.
+Language = English
+Grp and Dept%0
+.
+Language = Ukrainian
+Група та відділ%0
+.
+
+MessageId = FLD_Prod_Tax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налог%0
+.
+Language = English
+Tax%0
+.
+Language = Ukrainian
+Податок%0
+.
+
+MessageId = FLD_Comm_Wid
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид ком.%0
+.
+Language = English
+Cmnt kind%0
+.
+Language = Ukrainian
+Вид ком.%0
+.
+
+MessageId = FLD_Comm_Info
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Текст%0
+.
+Language = English
+Text%0
+.
+Language = Ukrainian
+Текст%0
+.
+
+MessageId = FLD_Rasp_Wid
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид расплаты%0
+.
+Language = English
+Kind of payment%0
+.
+Language = Ukrainian
+Вид розплати%0
+.
+
+MessageId = FLD_Rasp_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Rasp_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Код%0
+.
+Language = English
+Code%0
+.
+Language = Ukrainian
+Код%0
+.
+
+MessageId = FLD_InOut_Wid
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид вноса/выноса%0
+.
+Language = English
+Kind of deposit/withdrawal%0
+.
+Language = Ukrainian
+Вид вносу/виносу%0
+.
+
+MessageId = FLD_InOut_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Prom_Tax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налог промитога%0
+.
+Language = English
+Tax of subtotal%0
+.
+Language = Ukrainian
+Податок промітогу%0
+.
+
+MessageId = FLD_Prom_BegRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Начало%0
+.
+Language = English
+Begin%0
+.
+Language = Ukrainian
+Початок%0
+.
+
+MessageId = FLD_Prom_EndRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Конец%0
+.
+Language = English
+End%0
+.
+Language = Ukrainian
+Конец%0
+.
+
+MessageId = FLD_Prom_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Nac_NacRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запись под наценку%0
+.
+Language = English
+Reference for surcharge%0
+.
+Language = Ukrainian
+Запис під націнку%0
+.
+
+MessageId = FLD_Nac_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_Nac_Tax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налог%0
+.
+Language = English
+Tax%0
+.
+Language = Ukrainian
+Податок%0
+.
+
+MessageId = FLD_Nac_Prc
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Процент%0
+.
+Language = English
+Percent%0
+.
+Language = Ukrainian
+Відсоток%0
+.
+
+MessageId = FLD_PayOff_Wid
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид выплаты%0
+.
+Language = English
+Kind of payoff%0
+.
+Language = Ukrainian
+Вид виплати%0
+.
+
+MessageId = FLD_PayOff_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_PayOff_Mode
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Режим%0
+.
+Language = English
+Mode%0
+.
+Language = Ukrainian
+Режим%0
+.
+
+MessageId = FLD_PayOff_ModRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запись%0
+.
+Language = English
+Record%0
+.
+Language = Ukrainian
+Запис%0
+.
+
+MessageId = FLD_Form_Kind
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид отправления%0
+.
+Language = English
+Kind of sending%0
+.
+Language = Ukrainian
+Вид вiдправлення%0
+.
+
+MessageId = FLD_Form_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Form_Qty
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кол-во%0
+.
+Language = English
+Qty%0
+.
+Language = Ukrainian
+Кiльк.%0
+.
+
+MessageId = FLD_Pension_Sheet
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ведомость%0
+.
+Language = English
+Sheet%0
+.
+Language = Ukrainian
+Вiдомiсть%0
+.
+
+MessageId = FLD_Pension_Account
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Счет%0
+.
+Language = English
+Account%0
+.
+Language = Ukrainian
+Счет%0
+.
+
+MessageId = FLD_RemitPayOff_KGP
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+КГП%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+КГП%0
+.
+
+MessageId = FLD_RemitPayOff_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_RemitPayOff_Remit
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_RemitPayOff_Ctrl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Контр. разр.%0
+.
+Language = English
+Ctrl%0
+.
+Language = Ukrainian
+Контр. разр.%0
+.
+
+MessageId = FLD_BegPost_Kind
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Операция%0
+.
+Language = English
+Operation%0
+.
+Language = Ukrainian
+Операцiя%0
+.
+
+MessageId = FLD_BegPost_FirstParam
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам%0
+.
+Language = English
+Param%0
+.
+Language = Ukrainian
+Парам%0
+.
+
+MessageId = FLD_BegPost_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам1%0
+.
+Language = English
+Param1%0
+.
+Language = Ukrainian
+Парам1%0
+.
+
+MessageId = FLD_BegPost_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ почт. отп.%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ почт. вiдп.%0
+.
+
+MessageId = FLD_EndPost_BegRec
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Начало%0
+.
+Language = English
+Begin%0
+.
+Language = Ukrainian
+Початок%0
+.
+
+MessageId = FLD_EndPost_SumOnDelivery
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налож.%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Наклад.%0
+.
+
+MessageId = FLD_Phone_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Тел.%0
+.
+Language = English
+Phone%0
+.
+Language = Ukrainian
+Тел.%0
+.
+
+MessageId = FLD_EndPost_Dst
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Куда%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Куди%0
+.
+
+MessageId = FLD_EndPost_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_Telegram_Dst
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Зона%0
+.
+Language = English
+Zone%0
+.
+Language = Ukrainian
+Зона%0
+.
+
+MessageId = FLD_Telegram_NWords
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Слов%0
+.
+Language = English
+Words%0
+.
+Language = Ukrainian
+Слiв%0
+.
+
+MessageId = FLD_Sending_Weight
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вес%0
+.
+Language = English
+Weight%0
+.
+Language = Ukrainian
+Вага%0
+.
+
+MessageId = FLD_Sending_Cen
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ценность%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Цiннiсть%0
+.
+
+MessageId = FLD_Remit_Percent
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+-%%%0
+.
+Language = English
+-%%%0
+.
+Language = Ukrainian
+-%%%0
+.
+
+MessageId = FLD_Remit_NWords
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Слов%0
+.
+Language = English
+Words%0
+.
+Language = Ukrainian
+Слiв%0
+.
+
+MessageId = FLD_BegPart_Kind
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид%0
+.
+Language = English
+Kind%0
+.
+Language = Ukrainian
+Вид%0
+.
+
+MessageId = FLD_BegPart_Dst
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Напр%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Напр%0
+.
+
+MessageId = FLD_BegPart_Value
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ценность%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Цiннiсть%0
+.
+
+MessageId = FLD_EndPart_Kind
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Вид%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Вид%0
+.
+
+MessageId = FLD_EndPart_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Part_FirstParam
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам%0
+.
+Language = English
+Param%0
+.
+Language = Ukrainian
+Парам%0
+.
+
+MessageId = FLD_Part_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам1%0
+.
+Language = English
+Param1%0
+.
+Language = Ukrainian
+Парам1%0
+.
+
+MessageId = FLD_Part_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Part_Qty
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кол-во%0
+.
+Language = English
+Qty%0
+.
+Language = Ukrainian
+Кiльк.%0
+.
+
+MessageId = TBL_Check
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Электронная контрольная лента%0
+.
+Language = English
+Receipt tape%0
+.
+Language = Ukrainian
+Електронна контрольна стрічка%0
+.
+
+MessageId = FLD_Check_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Позиция%0
+.
+Language = English
+Position%0
+.
+Language = Ukrainian
+Позиція%0
+.
+
+MessageId = FLD_Check_Del
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Удалено%0
+.
+Language = English
+deleted%0
+.
+Language = Ukrainian
+видалено%0
+.
+
+MessageId = TBL_FDay
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фискальные отчеты%0
+.
+Language = English
+Fiscal reports%0
+.
+Language = Ukrainian
+Фіскальні звіти%0
+.
+
+MessageId = FLD_FDay_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_FDay_Real
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ошибка%0
+.
+Language = English
+Bad%0
+.
+Language = Ukrainian
+Помилка%0
+.
+
+MessageId = FLD_FDay_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_FDay_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_FDay_Total
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оборот%0
+.
+Language = English
+Total%0
+.
+Language = Ukrainian
+Усього%0
+.
+
+MessageId = FLD_FDay_STax1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ОборотА%0
+.
+Language = English
+TotalA%0
+.
+Language = Ukrainian
+УсьогоА%0
+.
+
+MessageId = FLD_FDay_STax2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ОборотБ%0
+.
+Language = English
+TotalB%0
+.
+Language = Ukrainian
+УсьогоБ%0
+.
+
+MessageId = FLD_FDay_STax3
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ОборотВ%0
+.
+Language = English
+TotalC%0
+.
+Language = Ukrainian
+УсьогоВ%0
+.
+
+MessageId = FLD_FDay_STax4
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+ОборотГ%0
+.
+Language = English
+TotalD%0
+.
+Language = Ukrainian
+УсьогоГ%0
+.
+
+MessageId = FLD_FDay_Out
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Выплаты%0
+.
+Language = English
+Payoffs%0
+.
+Language = Ukrainian
+Виплати%0
+.
+
+MessageId = FLD_FDay_NChk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Чеков%0
+.
+Language = English
+Receipts%0
+.
+Language = Ukrainian
+Чеків%0
+.
+
+MessageId = TBL_FTax
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Ставки налогов%0
+.
+Language = English
+Tax values%0
+.
+Language = Ukrainian
+Ставки податків%0
+.
+
+MessageId = FLD_FTax_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_FTax_Real
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Пусто%0
+.
+Language = English
+Empty%0
+.
+Language = Ukrainian
+Пустий%0
+.
+
+MessageId = FLD_FTax_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_FTax_NPnt
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Запятая%0
+.
+Language = English
+Point%0
+.
+Language = Ukrainian
+Кома%0
+.
+
+MessageId = FLD_FTax_Tax1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+НалогА%0
+.
+Language = English
+TaxA%0
+.
+Language = Ukrainian
+ПодатокА%0
+.
+
+MessageId = FLD_FTax_Tax2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+НалогБ%0
+.
+Language = English
+TaxB%0
+.
+Language = Ukrainian
+ПодатокБ%0
+.
+
+MessageId = FLD_FTax_Tax3
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+НалогВ%0
+.
+Language = English
+TaxC%0
+.
+Language = Ukrainian
+ПодатокВ%0
+.
+
+MessageId = FLD_FTax_Tax4
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+НалогГ%0
+.
+Language = English
+TaxD%0
+.
+Language = Ukrainian
+ПодатокГ%0
+.
+
+MessageId = FLD_FTax_FNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Фиск. №%0
+.
+Language = English
+Fisc No%0
+.
+Language = Ukrainian
+Фіск. №%0
+.
+
+MessageId = FLD_FTax_NNum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Налог.№%0
+.
+Language = English
+Payer No%0
+.
+Language = Ukrainian
+Податк. №%0
+.
+
+MessageId = FLD_FTax_NDay
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ отчета%0
+.
+Language = English
+ZNo%0
+.
+Language = Ukrainian
+№ звiту%0
+.
+
+MessageId = TBL_FSbr
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Инициализации%0
+.
+Language = English
+Initializations%0
+.
+Language = Ukrainian
+Ініциалізації%0
+.
+
+MessageId = FLD_FSbr_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_FSbr_Real
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Пусто%0
+.
+Language = English
+empty%0
+.
+Language = Ukrainian
+Пустий%0
+.
+
+MessageId = FLD_FSbr_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_FSbr_Time
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Время%0
+.
+Language = English
+Time%0
+.
+Language = Ukrainian
+Час%0
+.
+
+MessageId = FLD_FSbr_NDay
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ Z%0
+.
+Language = English
+ZNo%0
+.
+Language = Ukrainian
+№ Z%0
+.
+
+MessageId = FLD_R_Empty
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+X%0
+.
+Language = English
+X%0
+.
+Language = Ukrainian
+X%0
+.
+
+MessageId = FLD_R_BegDay_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_R_BegDay_KGP
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+КГП%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+КГП%0
+.
+
+MessageId = FLD_R_BegDay_Ctrl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Контр. разр.%0
+.
+Language = English
+Ctrl%0
+.
+Language = Ukrainian
+Контр. разр.%0
+.
+
+MessageId = FLD_R_BegDay0_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ Z1%0
+.
+Language = English
+Z1No%0
+.
+Language = Ukrainian
+№ Z1%0
+.
+
+MessageId = FLD_R_Remit0_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ перевода%0
+.
+Language = English
+Remit No%0
+.
+Language = Ukrainian
+№ переказу%0
+.
+
+MessageId = FLD_R_Remit0_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_R_Remit1_Direction
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Напр.%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Напр.%0
+.
+
+MessageId = FLD_R_Remit1_Index
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Индекс%0
+.
+Language = English
+Index%0
+.
+Language = Ukrainian
+Iндекс%0
+.
+
+MessageId = FLD_R_Remit1_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам%0
+.
+Language = English
+Param%0
+.
+Language = Ukrainian
+Парам%0
+.
+
+MessageId = FLD_R_RemitPay_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Оплата%0
+.
+Language = English
+Pay%0
+.
+Language = Ukrainian
+Плата%0
+.
+
+MessageId = FLD_R_PayOff1_Num
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ опер.%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ опер.%0
+.
+
+MessageId = FLD_R_PayOff1_KGP
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+КГП%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+КГП%0
+.
+
+MessageId = FLD_R_PayOff1_Date
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Дата%0
+.
+Language = English
+Date%0
+.
+Language = Ukrainian
+Дата%0
+.
+
+MessageId = FLD_R_PayOff2_Num0
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ приема%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+№ прийому%0
+.
+
+MessageId = FLD_R_PayOff2_Sum
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Сумма%0
+.
+Language = English
+Sum%0
+.
+Language = Ukrainian
+Сума%0
+.
+
+MessageId = FLD_R_PayOff2_Ctrl
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Контр. разр.%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Контр. разр.%0
+.
+
+MessageId = FLD_R_EndChk
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№ чека%0
+.
+Language = English
+RecNo%0
+.
+Language = Ukrainian
+№ чеку%0
+.
+
+MessageId = FLD_R_ZDst1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Zнапр1%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Zнапр1%0
+.
+
+MessageId = FLD_R_ZDst2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Zнапр2%0
+.
+Language = English
+Zнапр2%0
+.
+Language = Ukrainian
+%0
+.
+
+MessageId = FLD_R_ZDst3
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Zнапр3%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Zнапр3%0
+.
+
+MessageId = FLD_R_ZPayOff
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Zвыпл%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Zвипл%0
+.
+
+MessageId = FLD_R_ZDay
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Z1%0
+.
+Language = English
+Z1%0
+.
+Language = Ukrainian
+Z1%0
+.
+
+MessageId = TBL_Remit
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Переводы%0
+.
+Language = English
+Remit%0
+.
+Language = Ukrainian
+Перекази%0
+.
+
+MessageId = FLD_Remit_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Remit_Del
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Верно%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Дiйсно%0
+.
+
+MessageId = TBL_PParam
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметры ПО%0
+.
+Language = English
+%0
+.
+Language = Ukrainian
+Параметри ПВ%0
+.
+
+MessageId = FLD_PParam_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_PParam_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам%0
+.
+Language = English
+Param%0
+.
+Language = Ukrainian
+Парам%0
+.
+
+MessageId = TBL_LclIndex
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Местные индексы%0
+.
+Language = English
+Local indexes%0
+.
+Language = Ukrainian
+Мiсцевi iндекси%0
+.
+
+MessageId = FLD_LclIndex_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_LclIndex_Index
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Индекс%0
+.
+Language = English
+Index%0
+.
+Language = Ukrainian
+Iндекс%0
+.
+
+MessageId = TBL_USD
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Курс USD%0
+.
+Language = English
+USD Rate%0
+.
+Language = Ukrainian
+Курс USD%0
+.
+
+MessageId = FLD_USD_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_USD_Qty
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Кол-во%0
+.
+Language = English
+Qty%0
+.
+Language = Ukrainian
+Кiлькiсть%0
+.
+
+MessageId = FLD_USD_Rate
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Стоимость%0
+.
+Language = English
+Rate%0
+.
+Language = Ukrainian
+Коштує%0
+.
+
+MessageId = TBL_FlgEx
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Настройки терминала%0
+.
+Language = English
+Terminal option%0
+.
+Language = Ukrainian
+Прапорцi термiналу%0
+.
+
+MessageId = FLD_FlgEx_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_FlgEx_Flag
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Флаги%0
+.
+Language = English
+Flags%0
+.
+Language = Ukrainian
+Прапорцi%0
+.
+
+MessageId = TBL_Tariff
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Тарифы%0
+.
+Language = English
+Tariff%0
+.
+Language = Ukrainian
+Тарифи%0
+.
+
+MessageId = FLD_Tariff_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Tariff_Tariff
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Тариф%0
+.
+Language = English
+Tariff%0
+.
+Language = Ukrainian
+Тариф%0
+.
+
+MessageId = TBL_Zones
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Зоны%0
+.
+Language = English
+Zones%0
+.
+Language = Ukrainian
+Зони%0
+.
+
+MessageId = FLD_Zones_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Zones_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Название%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = FLD_Zones_Zone
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Зона%0
+.
+Language = English
+Zone%0
+.
+Language = Ukrainian
+Зона%0
+.
+
+MessageId = TBL_PLUEx
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Почтовые товары%0
+.
+Language = English
+PLU Post%0
+.
+Language = Ukrainian
+Почтовi товари%0
+.
+
+MessageId = FLD_PLUEx_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_PLUEx_Code
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Код%0
+.
+Language = English
+Code%0
+.
+Language = Ukrainian
+Код%0
+.
+
+MessageId = FLD_PLUEx_Name
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Название%0
+.
+Language = English
+Name%0
+.
+Language = Ukrainian
+Назва%0
+.
+
+MessageId = FLD_PLUEx_Cost
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Цена%0
+.
+Language = English
+Price%0
+.
+Language = Ukrainian
+Цiна%0
+.
+
+MessageId = FLD_PLUEx_Params
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Парам%0
+.
+Language = English
+Params%0
+.
+Language = Ukrainian
+Парам%0
+.
+
+MessageId = TBL_LocalIndexes
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Местные индексы%0
+.
+Language = English
+Local indexes%0
+.
+Language = Ukrainian
+Мiсцевi индекси%0
+.
+
+MessageId = FLD_LocalIndexes_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_LocalIndexes_Index
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Индекс%0
+.
+Language = English
+Index%0
+.
+Language = Ukrainian
+Iндекс%0
+.
+
+MessageId = TBL_TariffDiscounts
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Групповые скидки%0
+.
+Language = English
+Tariff discounts%0
+.
+Language = Ukrainian
+Груповi знижки%0
+.
+
+MessageId = FLD_TariffDiscounts_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_TariffDiscounts_Enabled
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Есть%0
+.
+Language = English
+Enbl%0
+.
+Language = Ukrainian
+Дозв.%0
+.
+
+MessageId = FLD_TariffDiscounts_Persent
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+%%%0
+.
+Language = English
+%%%0
+.
+Language = Ukrainian
+%%%0
+.
+
+MessageId = FLD_TariffDiscounts_Grp1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа1%0
+.
+Language = English
+Grp1%0
+.
+Language = Ukrainian
+Група1%0
+.
+
+MessageId = FLD_TariffDiscounts_Grp2
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа2%0
+.
+Language = English
+Grp2%0
+.
+Language = Ukrainian
+Група2%0
+.
+
+MessageId = FLD_TariffDiscounts_Grp3
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа3%0
+.
+Language = English
+Grp3%0
+.
+Language = Ukrainian
+Група3%0
+.
+
+MessageId = FLD_TariffDiscounts_Grp4
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа4%0
+.
+Language = English
+Grp4%0
+.
+Language = Ukrainian
+Група4%0
+.
+
+MessageId = FLD_TariffDiscounts_Grp5
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Группа5%0
+.
+Language = English
+Grp5%0
+.
+Language = Ukrainian
+Група5%0
+.
+
+MessageId = TBL_CCOMEx
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Порты терминала%0
+.
+Language = English
+Terminals COM%0
+.
+Language = Ukrainian
+Порти термiналу%0
+.
+
+MessageId = FLD_CCOMEx_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_CCOMEx_Device
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Устройство%0
+.
+Language = English
+Device%0
+.
+Language = Ukrainian
+Пристрiй%0
+.
+
+MessageId = FLD_CCOMEx_Baud
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Скорость%0
+.
+Language = English
+Baud%0
+.
+Language = Ukrainian
+Швидкiсть%0
+.
+
+MessageId = FLD_CCOMEx_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметр%0
+.
+Language = English
+Parameter%0
+.
+Language = Ukrainian
+Параметр%0
+.
+
+MessageId = TBL_Page
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Память терминала%0
+.
+Language = English
+Terminal memory%0
+.
+Language = Ukrainian
+Пам'ять терминалу%0
+.
+
+MessageId = FLD_Page_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Page_Page
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Страница%0
+.
+Language = English
+Page%0
+.
+Language = Ukrainian
+Сторiнка%0
+.
+
+MessageId = TBL_CRC
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+CRC%0
+.
+Language = English
+CRC%0
+.
+Language = Ukrainian
+CRC%0
+.
+
+MessageId = FLD_CRC_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_CRC_CRC
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+CRC%0
+.
+Language = English
+CRC%0
+.
+Language = Ukrainian
+CRC%0
+.
+
+MessageId = TBL_CRC1
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+CRC1%0
+.
+Language = English
+CRC1%0
+.
+Language = Ukrainian
+CRC1%0
+.
+
+MessageId = FLD_CRC1_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_CRC1_CRC
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+CRC%0
+.
+Language = English
+CRC%0
+.
+Language = Ukrainian
+CRC%0
+.
+
+MessageId = TBL_Params
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Доп. параметры ПО%0
+.
+Language = English
+Extra params%0
+.
+Language = Ukrainian
+Дод. параметри ПВ%0
+.
+
+MessageId = FLD_Params_ID
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+№%0
+.
+Language = English
+No%0
+.
+Language = Ukrainian
+№%0
+.
+
+MessageId = FLD_Params_Param
+Severity = EQLSeverity
+Facility = EQLFacility
+Language = Russian
+Параметр%0
+.
+Language = English
+Parameter%0
+.
+Language = Ukrainian
+Параметр%0
+.
+

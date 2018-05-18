@@ -1,0 +1,752 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Romanian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ROM)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041804b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x418, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Raport",                   ID_M1_ZREP, GRAYED
+        MENUITEM "&X Raport",                   ID_M1_XREP, GRAYED
+        MENUITEM "&Sterge ECS Raport",          ID_M1_TREP, GRAYED
+        MENUITEM "&Vanzari Raport",             ID_M1_PREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Optiuni...",                 ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Inchidere",                  ID_M1_SHUTDOWN
+        MENUITEM "&Terminare",                  ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_418.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "Nu aveti cheie de acces pt. Lucrul cu Acest AMEF sau cheia este expirata"
+    IDS_RED                 "VSU: disconnected"
+    IDS_YELLOW              "VSU: connecting..."
+    IDS_GREEN               "VSU: connected"
+END
+
+#endif    // Romanian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Bulgarian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_BGR)
+#ifdef _WIN32
+LANGUAGE LANG_BULGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x402, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Отчет",                    ID_M1_ZREP, GRAYED
+        MENUITEM "&X Отчет",                    ID_M1_XREP, GRAYED
+        MENUITEM "&Нулиране на ЕКЛ",            ID_M1_TREP, GRAYED
+        MENUITEM "&Отчет по Продажби",          ID_M1_PREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Параметри...",               ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Изключване",                 ID_M1_SHUTDOWN
+        MENUITEM "Прекра&тяване",               ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_402.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "Липсва ключ за достъп за работа с касови апарати или срока на действие на ключа е изтекъл"
+    IDS_RED                 "VSU: disconnected"
+    IDS_YELLOW              "VSU: connecting..."
+    IDS_GREEN               "VSU: connected"
+END
+
+#endif    // Bulgarian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Отчёт",                    ID_M1_ZREP, GRAYED
+        MENUITEM "&X Отчёт",                    ID_M1_XREP, GRAYED
+        MENUITEM "&Стирание ЭКЛ",               ID_M1_TREP, GRAYED
+        MENUITEM "Отчёт по &Продажам",          ID_M1_PREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Настройки...",               ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_M1_SHUTDOWN
+        MENUITEM "С&рочный выход",              ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_419.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "Отсутствует ключ доступа для работы с данным кассовым аппаратом или срок действия ключа истёк"
+    IDS_RED                 "VSU: связь не установлена"
+    IDS_YELLOW              "VSU: ожидание подключения..."
+    IDS_GREEN               "VSU: устройство на связи"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x22, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE 0x22, 0x1
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "042204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x422, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Звіт",                     ID_M1_ZREP, GRAYED
+        MENUITEM "&X Звіт",                     ID_M1_XREP, GRAYED
+        MENUITEM "&Стирання ЕКС",               ID_M1_TREP, GRAYED
+        MENUITEM "Звіт по &Продажах",           ID_M1_PREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Опції...",                   ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Вихiд",                      ID_M1_SHUTDOWN
+        MENUITEM "&Термiновий вихiд",           ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_422.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "Відсутній ключ для роботи з вказаним касовим апаратом або строк дії ключа скінчився"
+    IDS_RED                 "VSU: зв'язок не встановлено"
+    IDS_YELLOW              "VSU: чекаємо на підключення..."
+    IDS_GREEN               "VSU: пристрій на зв'язку"
+END
+
+#endif    // Unknown language: 0x22, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Greek resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ELL)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040804b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x408, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Report",                   ID_M1_ZREP, GRAYED
+        MENUITEM "&X Report",                   ID_M1_XREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Sh&ut Down",                  ID_M1_SHUTDOWN
+        MENUITEM "&Terminate",                  ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_408.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "You have no access key to work with this cash register or your key expired"
+    IDS_RED                 "VSU: disconnected"
+    IDS_YELLOW              "VSU: connecting..."
+    IDS_GREEN               "VSU: connected"
+END
+
+#endif    // Greek resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Help Micro\0"
+            VALUE "FileDescription", "vsures\0"
+            VALUE "FileVersion", "3, 0, 1, 1\0"
+            VALUE "InternalName", "vsures\0"
+            VALUE "LegalCopyright", "Copyright © 2005-2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vsures.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Help Micro vsures\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TrayMenu MENU DISCARDABLE 
+BEGIN
+    POPUP "M1"
+    BEGIN
+        MENUITEM "&Z Report",                   ID_M1_ZREP, GRAYED
+        MENUITEM "&X Report",                   ID_M1_XREP, GRAYED
+        MENUITEM "&Erasing Tape Report",        ID_M1_TREP, GRAYED
+        MENUITEM "&Sales Report",               ID_M1_PREP, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_M1_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Sh&ut Down",                  ID_M1_SHUTDOWN
+        MENUITEM "&Terminate",                  ID_M1_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 11
+//
+
+1 MESSAGETABLE DISCARDABLE     "vsumc_409.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VSU                 ICON    DISCARDABLE     "vsutray.ico"
+IDI_RED                 ICON    DISCARDABLE     "magnolia-r.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "magnolia-y.ico"
+IDI_GREEN               ICON    DISCARDABLE     "magnolia-g.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "vsu"
+    IDS_EXPIRED             "You have no access key to work with this cash register or your key expired"
+    IDS_RED                 "VSU: disconnected"
+    IDS_YELLOW              "VSU: connecting..."
+    IDS_GREEN               "VSU: connected"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

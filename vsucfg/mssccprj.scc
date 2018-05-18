@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[vsucfg.dsp]
+SCC_Aux_Path = "\\SERVER1\project\vss"
+SCC_Project_Name = "$/vsu/vsucfg", TBDAAAAA

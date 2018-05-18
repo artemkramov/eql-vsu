@@ -1,0 +1,129 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "vsu"=.\vsu.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu", KABAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsucfg"=.\vsucfg\vsucfg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsucfg", TBDAAAAA
+    .\vsucfg
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsucfgr402"=.\vsucfg\vsucfgr402\vsucfgr402.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsucfg/vsucfgr402", ZTDAAAAA
+    .\vsucfg\vsucfgr402
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsucfgr408"=.\vsucfg\vsucfgr408\vsucfgr408.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsucfg/vsucfgr408", ZTDAAAAA
+    .\vsucfg\vsucfgr408
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsucfgr418"=.\vsucfg\vsucfgr418\vsucfgr418.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsucfg/vsucfgr418", ZTDAAAAA
+    .\vsucfg\vsucfgr418
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsucfgr422"=.\vsucfg\vsucfgr422\vsucfgr422.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsucfg/vsucfgr422", ZTDAAAAA
+    .\vsucfg\vsucfgr422
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "vsures"=.\vsures\vsures.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/vsu/vsures", GTDAAAAA
+    .\vsures
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,117 @@
+// vsu.idl : IDL source for vsu.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vsu.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(291BDFBF-E9FC-11D3-9BE8-008048C5FDF8),
+		dual,
+		helpstring("IHcUniverse Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse : IDispatch
+	{
+		[id(1), helpstring("method Register")] HRESULT Register([in]BSTR Machine,[in]long LogNum,[in]long User,[in]long Password);
+		[id(2), helpstring("method ProcessFile")] HRESULT ProcessFile([in]BSTR File);
+		[id(3), helpstring("method ClrAllPlu")] HRESULT ClrAllPlu();
+	};
+
+	[
+		object,
+		uuid(600D3CE0-4F41-11D4-9D03-008048C5FDF8),
+		dual,
+		helpstring("IHcUniverse2 Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse2 : IHcUniverse
+	{
+		[id(4), helpstring("method Squeeze")] HRESULT Squeeze();
+		[id(5), helpstring("method Serial")] HRESULT Serial([out, retval]long *pVal);
+		[id(6), helpstring("method Call0")] HRESULT Call0([in]BSTR ProcName);
+		[id(7), helpstring("method Call1")] HRESULT Call1([in]BSTR ProcName,[in]VARIANT p1);
+		[id(8), helpstring("method SetICP")] HRESULT SetICP([in]long Input);
+		[id(9), helpstring("method SetOCP")] HRESULT SetOCP([in]long Output);
+		[id(10), helpstring("method PrintForm")] HRESULT PrintForm([in]BSTR File);
+		[id(11), helpstring("method PrintComment")] HRESULT PrintComment([in]BSTR File);
+		[id(12), helpstring("method Unload")] HRESULT Unload();
+	};
+
+	[
+		object,
+		uuid(A7B1FAE9-40E3-40EB-B28F-B496311A083E),
+		dual,
+		helpstring("IHcUniverse3 Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse3 : IHcUniverse2
+	{
+		[id(13), helpstring("method RegisterEx")] HRESULT RegisterEx([in]BSTR Machine,[in]long Port,[in]long LogNum,[in]long User,[in]long Password);
+		[id(14), helpstring("method SetWatchDir")] HRESULT SetWatchDir([in]BSTR Dir);
+		[id(15), helpstring("method PrintVoid")] HRESULT PrintVoid(BSTR File);
+	};
+
+	[
+		object,
+		uuid(9B117E3C-8342-4325-AA5D-B460202EDE01),
+		dual,
+		helpstring("IHcUniverse4 Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse4 : IHcUniverse3
+	{
+		[id(16), helpstring("method SetFormat")] HRESULT SetFormat([in]long nProt);
+		[id(17), helpstring("method Wildcard")] HRESULT SetWildcard([in]BSTR Mask);
+	};
+
+	[
+		object,
+		uuid(3D9551E1-C91A-40CB-9783-EF5AF5DB901F),
+		dual,
+		helpstring("IHcUniverse5 Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse5 : IHcUniverse4
+	{
+		[id(18), helpstring("method Call5")] HRESULT Call5([in]BSTR ProcName,[in]VARIANT p1,[in]VARIANT p2,[in]VARIANT p3,[in]VARIANT p4,[in]VARIANT p5);
+	};
+
+	[
+		object,
+		uuid(438CEDC1-8346-4825-8D9B-FE5B39C1C6D1),
+		dual,
+		helpstring("IHcUniverse6 Interface"),
+		pointer_default(unique)
+	]
+	interface IHcUniverse6 : IHcUniverse5
+	{
+		[id(19), helpstring("method PrintError")] HRESULT PrintError([in]BSTR FileName,[in]long eCode);
+	};
+
+[
+	uuid(291BDFB1-E9FC-11D3-9BE8-008048C5FDF8),
+	version(1.0),
+	helpstring("vsu 1.0 Type Library")
+]
+library VSULib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	
+	[
+		uuid(291BDFC0-E9FC-11D3-9BE8-008048C5FDF8),
+		helpstring("HcUniverse Class")
+	]
+	coclass HcUniverse
+	{
+		interface IHcUniverse6;
+		interface IHcUniverse5;
+		interface IHcUniverse4;
+		interface IHcUniverse3;
+		interface IHcUniverse2;
+		[default] interface IHcUniverse;
+	};
+};

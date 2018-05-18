@@ -1,0 +1,149 @@
+ProcessFile(File)
+C/asdf ghjk/
+0;0xc0005001;
+Line 1: ‡¢'ï§®ª § ª á®¢¨¬  ¯ à â®¬ ­¥ ¢áâ ­®¢«¥­®
+0x80040201: Connection error: 0x80011001: device session is not opened
+0xe0028116: Connection attempt failed due to error: device session failed to open
+‡¢'ï§®ª § ª á®¢¨¬  ¯ à â®¬ ­¥ ¢áâ ­®¢«¥­®
+ProcessFile(File)
+0;0xc0005001;
+‡¢'ï§®ª § ª á®¢¨¬  ¯ à â®¬ ­¥ ¢áâ ­®¢«¥­®
+ProcessFile(File)
+C/asdf ghjk/
+0;0xc0005001;
+Line 1: ‡¢'ï§®ª § ª á®¢¨¬  ¯ à â®¬ ­¥ ¢áâ ­®¢«¥­®
+0xe0028105: There is no such procedure: TextComment
+‡¢'ï§®ª § ª á®¢¨¬  ¯ à â®¬ ­¥ ¢áâ ­®¢«¥­®
+ProcessFile(File)
+C/asdf ghjk/
+4190005;0x80004005;
+Line 1: Unknown fatal error
+ProcessFile(File)
+C/asdf ghjk/
+4190005;0x0;
+ProcessFile(File)
+C/asdf ghjk/
+4190005;0x0;
+ProcessFile(File)
+C/asdf ghjk/
+4190005;0x0;
+ProcessFile(File)
+C/³-T³L³ L+ ³+³+L³/
+S/+-T³L +³£T£=³L      L+=L³-£LL +³'³T+/1,00/2,20/13/1/
+S/+-T³L +³£T£=³L      ³+T£-+/1,00/6,00/13/1/
+S/³+T£L³+=+/1,00/2,20/13/1/
+S/+-T³L BURGER/2,00/2,00/13/1/
+CR/0,00/
+4190005;0x0;
+ProcessFile(File)
+C/IMEI ³£=³L³- L³T+£-=³-SAMSUNG GALAXY S4 MINI1534527830123453412531/
+S/SAMSUNG GALAXY     S4 MINI/1,00/92,20/13/1/
+S/KATL+ ³=³³³L       MICRO SD 16 GB/1,00/15,00/13/1/
+CR/0,00/
+4190005;0x0;
+ProcessFile(File)
+C/IMEI ³£=³L³- L³T+£-=³-SAMSUNG GALAXY S4 MINI1534527830123453412531/
+4190005;0x80004005;
+Line 1: 0xe0028105: There is no such procedure: PrintComment
+ProcessFile(File)
+C/L+³£+L 1 LLON ³T³£³   ME TA +LT³L£³+/
+S/£³T³+ +=-T£³³ PUMA ³+++L³L L/1,00/40,10/13/1/
+SC/£³T³+ +=-T£³³ FILA³+++L³L SM/1,00/39,20/13/1/
+S/³+TLL+L +=-T£³+L   =³-³+T³ 42/2,00/6,00/13/1/
+CR/0,00/
+4190005;0x0;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+P/10 
+4190005;0xc000700a;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+P/10 
+4190005;0xc000700a;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+P/10 
+S/³³T£L£³³/1,00/6,20/13/1/
+S/³³LL£ +³£T£=³/1,00/6,20/13/1/
+S/£+L³T+³£+/1,00/3,30/13/1/
+SC/³³+³+T£+T³L L++T+L/1,126/3,196/13/1/
+4190005;0xc000700a;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+4190005;0xc00051e5;
+Line 2: 0xe0028115: Command : Cash register returned error 0xe5: Invalid group
+ProcessFile(File)
+C/LT+³+³£ =³-³+T³ 1     L+TT£L³T³L ³+³³L/
+S/+-T³L +³£T£=³L      L+=L³-£LL +³'³T+/1,00/2,20/13/1/
+4190005;0xc00051c2;
+Line 2: 0xe0028115: Command : Cash register returned error 0xc2: ef_BadProcParam Bad procedure parameter
+ProcessFile(File)
+C/asdf ghjk/
+S/SWEET BURGER/2,00/2,00/13/1/
+FC/123456789123456789/
+CR/20,00/1
+4190005;0x0;
+ProcessFile(File)
+C/LT+³+³£ =³-³+T³ 1     L+TT£L³T³L ³+³³L/
+S/+-T³L +³£T£=³L      L+=L³-£LL +³'³T+/1,00/2,20/13/1/
+S/+-T³L +³£T£=³L      ³+T£-+/1,00/6,00/13/1/
+S/³+T£L³+=+/1,00/2,20/13/1/
+S/+-T³L BURGER/2,00/2,00/13/1/
+FC/123456789123456789/
+CR/20,00/1
+4190005;0x0;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+P/10 
+S/³³T£L£³³/1,00/6,20/13/1/
+S/³³LL£ +³£T£=³/1,00/6,20/13/1/
+S/£+L³T+³£+/1,00/3,30/13/1/
+SC/³³+³+T£+T³L L++T+L/1,126/3,196/13/1/
+4190005;0xc000700a;
+ProcessFile(File)
+C/LT+³EZI 42/
+S/³³+³+T£+T³L L++T+L/0,216/1,01/13/1/
+P/10 
+S/³³T£L£³³/1,00/6,20/13/1/
+S/³³LL£ +³£T£=³/1,00/6,20/13/1/
+S/£+L³T+³£+/1,00/3,30/13/1/
+SC/³³+³+T£+T³L L++T+L/1,126/3,19/13/1/
+S/³+++£T£LL+/1,10/4,90/13/1/
+S/L³³-³³T£ ³+³=£LL³/1,15/0,90/13/1/
+PD/0,01
+S/³+++£T£LL+/3,0/4,90/13/1/
+PD/1,02
+S/++T+³L/1,199/0,91/13/2/
+T/10 
+TD/0,11
+CR/50,00/1
+4190005;0x0;
+Call1(PrintReport)
+4190007;0xc00051d7;
+0xe0028115: Command : Cash register returned error 0xd7: Z1 report is already printed out and cleared (Z1 report is empty)
+Call1(PrintReport)
+4190007;0x0;
+ProcessFile(File)
+C/IMEI ³£=³L³- L³T+£-=³-SAMSUNG GALAXY S4 MINI1534527830123453412531/
+S/SAMSUNG GALAXY     S4 MINI/1,00/92,20/13/1/
+S/KATL+ ³=³³³L       MICRO SD 16 GB/1,00/15,00/13/1/
+CR/0,00/
+4190007;0x0;
+ProcessFile(File)
+C/asdf ghjk/
+S/SWEET BURGER/2,00/2,00/13.17/1/
+4190007;0xc000700a;
+ProcessFile(File)
+C/asdf ghjk/
+S/SWEET BURGER/2,00/2,00/13.17/1/
+FC/123456789123456789/
+S/SWEET BURGER/2,00/2,00/13,17/1/
+S/SWEET BURGER/2,00/2,00/ 13.17 /1/
+S/SWEET BURGER/2,00/2,00/39/1/
+CR/20,00/1
+4190007;0x0;

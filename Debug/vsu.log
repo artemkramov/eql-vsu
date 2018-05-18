@@ -1,0 +1,489 @@
+Call1(PrintReport)
+1100020;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+Call1(PrintReport)
+1100020;0x0;
+Call1(PrintReport)
+1100020;0xc00051d7;
+0xe0028115: Command : Cash register returned error 0xd7: Z1 report is already printed out and cleared (Z1 report is empty)
+Call1(PrintReport)
+1100020;0xc00051d7;
+0xe0028115: Command : Cash register returned error 0xd7: Z1 report is already printed out and cleared (Z1 report is empty)
+Call1(PrintReport)
+1100020;0x0;
+SetWatchDir(Dir)
+SetWatchDir(Dir)
+ProcessFile(File)
+1100020;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+S;443;;10.30;;1;1;1;;
+1100020;0xc0005005;
+Line 1: Invalid price of selling: S;443;;10.30;;1;1;1;;
+ProcessFile(File)
+S;443;;10,30;;1;1;1;;
+T;;;;
+1100020;0x0;
+ProcessFile(File)
+S;443;;10,30;;1;1;1;;
+T;;;;
+1100020;0x0;
+ProcessFile(File)
+S;443;;10,30;;1;1;1;;
+T;;;;
+1100020;0x0;
+ProcessFile(File)
+S;443;;10,30;;1;1;1;;
+T;;;;
+1100020;0x0;
+ProcessFile(File)
+1100020;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xf9: The cashier is not registered
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+Call1(PrintReport)
+1100020;0x0;
+Call1(PrintReport)
+1100020;0x0;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+1100020;0xc000500f;
+Line 5: Invalid sum of discount: D;0;1.12;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+1100020;0x0;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+1100020;0x0;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+1100020;0x0;
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+1100020;0x0;
+ProcessFile(File)
+R
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+1100020;0xc0005002;
+Line 4: Syntax error in line: R
+ProcessFile(File)
+R;
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+1100020;0x0;
+ProcessFile(File)
+N;
+1100020;0xc0005003;
+Line 1: Invalid PLU code: N;
+ProcessFile(File)
+N;123
+ProcessFile(File)
+N;123
+ProcessFile(File)
+N;123
+ProcessFile(File)
+N;123
+1100020;0xc0005017;
+Line 1:  аса не п≥дтримуЇ друк фактур: N;123
+ProcessFile(File)
+3404;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+3404;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+3404;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+3404;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+3404;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+Call1(PrintReport)
+3404;0x0;
+ProcessFile(File)
+N;123
+3404;0xc00051c2;
+Line 1: 0xe0028115: Command : Cash register returned error 0xc2: ef_BadProcParam Bad procedure parameter
+ProcessFile(File)
+N;1234
+3404;0xc00051c2;
+Line 1: 0xe0028115: Command : Cash register returned error 0xc2: ef_BadProcParam Bad procedure parameter
+ProcessFile(File)
+N;12345
+;P;КЃђђ•≠в†а®©;
+;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+S;44001;Г†ђ†§а®Ђ;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+   
+3404;0x0;
+ProcessFile(File)
+N;12345
+;P; омментарий;
+;< од>;[<»м€>];[<÷ена>];[< ол.>];[<ќтд>];[<√руп>];[<Ќал>];[<‘лаги>];
+S;44001;√амадрил;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+P;—трока 1
+3404;0xc000500a;
+Line 9: Invalid comment command: P;—трока 1
+ProcessFile(File)
+N;12345
+;P; омментарий;
+;< од>;[<»м€>];[<÷ена>];[< ол.>];[<ќтд>];[<√руп>];[<Ќал>];[<‘лаги>];
+S;44001;√амадрил;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+P;—трока 1
+3404;0xc000500a;
+Line 9: Invalid comment command: P;—трока 1
+ProcessFile(File)
+N;12345
+;P; омментарий;
+;< од>;[<»м€>];[<÷ена>];[< ол.>];[<ќтд>];[<√руп>];[<Ќал>];[<‘лаги>];
+S;44001;√амадрил;11,11;5,12;1;1;;;comment;unit
+B;33;11 22 33 44 55 66 77 88 99;
+D;0;1.12;
+B;48;00 aa bb cc dd ee ff 11 22;
+T;1;;;
+P;—трока 1;
+P;ѕосле полной оплаты;
+P;”крањнськ≥ л≥тери:;
+P;ѓњ™Ї®Є≤≥•і;
+P;—трока 5;
+P;—трока 6;
+P;—трока 7;
+P;—трока 8;
+P;—трока 9;
+P;—трока 10;
+3404;0x0;
+ProcessFile(File)
+R;
+3404;0xc0005018;
+Line 1: Cash register does not support return receipts: R;
+ProcessFile(File)
+R;
+3404;0xc0005018;
+Line 1: Cash register does not support return receipts: R;
+ProcessFile(File)
+R;
+3404;0xc0005018;
+Line 1: Cash register does not support return receipts: R;
+ProcessFile(File)
+R;
+3404;0xc0005018;
+Line 1:  аса не п≥дтримуЇ видатков≥ чеки: R;
+ProcessFile(File)
+F 1 »ме на фирмата
+F 2 јдрес на фирмата
+F 3 1226013527   121108681ё
+F 4 ѕетър ÷онев
+P 0123456789012345678901234567890123456789012345678901234567890123456789
+R     1.23       3.33 2    123 ѕа–аѕлјн ABCDEFGHIJKLMN
+S     1.23       3.33 2    7 Ѕандерлог √одзиллович
+% 0 06.07
+T 0
+3404;0x0;
+ProcessFile(File)
+#LM1234567891011
+#F
+3404;0xc000700a;
+Line 2: —интаксична помилка. —трока не в≥дпов≥даЇ формату вх≥дного файлу
+#F
+ ^
+ProcessFile(File)
+#LM1234567891011
+#F
+:–≈ƒ 1 »ван ѕетров
+:–≈ƒ 2
+:–≈ƒ 3
+:–≈ƒ 4
+:–≈ƒ 5
+:“екст
+0741ƒормидонтий!0000123400031415
+#S-0607
+#E11000.50
+3404;0x0;
+ProcessFile(File)
+R;
+3404;0xc000700a;
+Line 1: Syntax error. Line is improperly formatted
+R;
+^
+ProcessFile(File)
+R;
+3404;0xc000700a;
+Line 1: Syntax error. Line is improperly formatted
+R;
+^
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+S;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+3404;0xc0005003;
+Line 2: Invalid PLU code: S;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+ProcessFile(File)
+;P;КЃђђ•≠в†а®©;
+S;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+3404;0xc0005003;
+Line 2: Cod PLU Invalid: S;<КЃ§>;[<Иђп>];[<Ц•≠†>];[<КЃЂ.>];[<Ов§>];[<Гагѓ>];[<Н†Ђ>];[<ФЂ†£®>];
+Call1(PrintReport)
+3404;0x0;
+Call1(PrintReport)
+1190405;0x0;
+Call1(PrintReport)
+56202904;0x0;
+Call5(FMReport)
+56202904;0x80004005;
+0xe0028105: There is no such procedure: FMReport
+Call5(FMReport)
+4223;0x80004005;
+0xe0028105: There is no such procedure: FMReport
+Call5(FMReport)
+2191c3;0x80004005;
+80020005
+Type mismatch.
+Call5(FMReport)
+2200003;0xc0005134;
+0xe0028115: Command : Cash register returned error 0x34: ƒоступ к таблице запрещен
+Call5(FMReport)
+2200003;0xc00051bc;
+0xe0028115: Command : Cash register returned error 0xbc: јктивен режим тренировки
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,0)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,0)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\file.bon,0)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,0)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721319)
+0;0xc0005019;
+Can not handle 'D' because connection with cash register is not initiated
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721318)
+0;0xc000501a;
+Can not handle 'D' because VSU is waiting for cash register connection
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721318)
+0;0xc000501a;
+Can not handle 'D' because VSU is waiting for cash register connection
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721318)
+0;0xc000501a;
+Can not handle 'D' because VSU is waiting for cash register connection
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721318)
+0;0xc000501a;
+Can not handle 'D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu' because VSU is waiting for cash register connection
+Call5(FMReport)
+56100000;0x80004005;
+0xe0028105: There is no such procedure: FMReport
+Call5(FMReport)
+56100000;0x80004005;
+0xe0028105: There is no such procedure: FMReport
+Call5(FMReport)
+56100000;0x80004005;
+0xe0028105: There is no such procedure: FMReport
+ProcessFile(File)
+56202904;0x80004005;
+0x80040201: Connection error: 0x80011002: device is off
+0xe0028112: Command execution finished with 'prepared' result
+ProcessFile(File)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+ProcessFile(File)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+ProcessFile(File)
+0;0xc0005001;
+«в'€зок з касовим апаратом не встановлено
+Unload()
+ProcessFile(File)
+56202904;0x80004005;
+0x80040201: Connection error: 0x80011002: device is off
+0xe0028112: Command execution finished with 'prepared' result
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\file.bon,-1073721319)
+0;0xc0005019;
+Ќеможливо виконати файл 'D:\siv\prj\win\dbc\vsu\Debug\dert\file.bon' через те що зв'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721319)
+0;0xc0005019;
+Ќеможливо виконати файл 'D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu' через те що зв'€зок з касовим апаратом не встановлено
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721318)
+0;0xc000501a;
+Ќеможливо виконати файл 'D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu' через те що VSU чекаЇ на зв'€зок з касовим апаратом
+PrintError(D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu,-1073721317)
+56202904;0xc000501b;
+Ќеможливо виконати файл 'D:\siv\prj\win\dbc\vsu\Debug\dert\File.vsu' через те що зв'€зок з касовим апаратом раптово припинивс€
+Unload()
+ProcessFile(File)
+1234567;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+1234567;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xf9: The cashier is not registered
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+X;7001;;0.01;1;1;1;1;1;
+1234567;0xc00051dd;
+Line 3: 0xe0028115: Command : Cash register returned error 0xdd: There was not any selling yet
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+X;7001;Obmen;0.01;1;1;1;1;1;
+1234567;0xc00051dd;
+Line 3: 0xe0028115: Command : Cash register returned error 0xdd: There was not any selling yet
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+S;7001;Obmen;0.99;1;1;1;1;1;
+P;L+T+-+≥≥T≥≥TT≥+≥≥TTL    ;
+T;1;0.01;;
+1234567;0xc00051f8;
+Line 6: 0xe0028115: Command : Cash register returned error 0xf8: The payment for the check is not completed
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+S;7001;Obmen;0.99;1;1;1;1;1;
+P;L+T+-+≥≥T≥≥TT≥+≥≥TTL    ;
+T;;;;
+1234567;0x0;
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+X;7001;Obmen;0.99;1;1;1;1;1;
+1234567;0xc00051dd;
+Line 3: 0xe0028115: Command : Cash register returned error 0xdd: There was not any selling yet
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+X;7001;Obmen;0.01;1;1;1;1;1;
+1234567;0xc00051dd;
+Line 3: 0xe0028115: Command : Cash register returned error 0xdd: There was not any selling yet
+ProcessFile(File)
+1234567;0xc00051c3;
+0xe0028115: Command : Cash register returned error 0xc3: ef_NoFisPrnMode Fiscal printer mode is not started
+ProcessFile(File)
+P;N0001      ;
+P;-=.≥+TTL+L:;
+S;7001;Obmen;0.99;1;1;1;1;1;
+X;7001;Obmen;0.01;1;1;1;1;1;
+P;L+T+-+≥≥T≥≥TT≥+≥≥TTL    ;
+T;;;;
+1234567;0x0;
+Call1(PrintReport)
+56202904;0x0;
+Call1(PrintReport)
+56202904;0x0;

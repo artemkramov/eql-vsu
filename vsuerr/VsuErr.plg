@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VsuErr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\TEMP\RSPC4.bat" with contents
+[
+@echo off
+mc VsuErrM -x .\Release
+]
+Creating command line "E:\TEMP\RSPC4.bat"
+Creating temporary file "E:\TEMP\RSPC5.bat" with contents
+[
+@echo off
+d:\perl\bin\perl.exe D:\siv\prj\win\perl\updver.pl .\VsuErr.rc e:\vctmp\Release\vsuerr\VsuErr.res
+]
+Creating command line "E:\TEMP\RSPC5.bat"
+Creating temporary file "E:\TEMP\RSPC6.tmp" with contents
+[
+kernel32.lib /nologo /base:"0x36f00000" /version:1.0 /entry:"DllMainVsuErr" /dll /incremental:no /pdb:"Release/VsuErr.pdb" /machine:I386 /nodefaultlib /out:"Release/VsuErr.dll" /implib:"Release/VsuErr.lib" /Release /merge:.rdata=.text 
+e:\vctmp\Release\vsuerr\VsuErr.obj
+e:\vctmp\Release\vsuerr\VsuErr.res
+]
+Creating command line "link.exe @E:\TEMP\RSPC6.tmp"
+Executing Message Compiler (mc.exe)
+MC: Compiling VsuErrM.mc
+Updating build counter
+#this is version resource
+Current position is 0000009c
+Comments=
+CompanyName=Help
+FileDescription=VsuErr
+here we need to work
+FileVersion=54, 0, 11936, 35306
+InternalName=VsuErr
+LegalCopyright=Copyright © 2000
+LegalTrademarks=
+OriginalFilename=VsuErr.dll
+PrivateBuild=
+ProductName=Help VsuErr
+ProductVersion=1, 0, 0, 1
+SpecialBuild=
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4078: multiple ".text" sections found with different attributes (40000040)
+
+
+
+<h3>Results</h3>
+VsuErr.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
