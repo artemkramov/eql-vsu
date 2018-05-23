@@ -11,6 +11,7 @@
 #include <msi.h>
 #include <initguid.h>
 #include "vsu.h"
+#include <vector>
 
 #include "vsu_i.c"
 #include "HcUniverse.h"
@@ -2107,6 +2108,7 @@ bool GetDouble(char*&cl,_variant_t&dbl){
 
 DWORD globerr=0;
 unsigned string_in_process=0;
+bool isExcludeCharacterDetected = false;
 
 std::ostream&operator<<(std::ostream&out,getmsg const&gm){
 	return out<<gm.lpMsgBuf;
@@ -4117,18 +4119,91 @@ HRESULT CExeModule::LineFormat2016(LineContext2016*ctx, char *const line, unsign
 	return MessageId;
 }
 
-void clearCharFromString(char * p)
+struct byteRow {
+		std::vector<unsigned char> vec;
+		int length;
+};
+
+void clearCharFromString(char * line, int lineLength)
 {
-	if (NULL == p)
+	int i,j,k;
+	if (NULL == line)
 		return;
-	char * pDest = p;
-	while (*p)
-	{
-		if (*p != 0x0c)
-			*pDest++ = *p;
-		p++;
+	if (!isExcludeCharacterDetected) {
+		return;
 	}
-	*pDest = '\0';
+
+	std::vector<byteRow> excludeData;
+
+	// Parse binary string via 0x43 delimiter byte
+	// Try to find the all denied sequences of bytes
+	BYTE delimiter = 0x43;
+	int counter = 0;
+	int sequence = 0;
+	excludeData.push_back(byteRow());
+	for (i = 0; i < sizeof(_Module.ExcludeCharacters); i++) {
+		if (_Module.ExcludeCharacters[i] == 0x00) {
+			break;
+		}
+		if (_Module.ExcludeCharacters[i] != delimiter) {
+			counter++;
+			excludeData[sequence].vec.push_back(_Module.ExcludeCharacters[i]);
+		}
+		else {
+			excludeData[sequence].length = counter;
+			excludeData.push_back(byteRow());
+			sequence++;
+			counter = 0;
+		}
+	}
+	excludeData[sequence].length = counter;
+
+	// Find all index of the string which should be removed
+	std::vector<int> removeIndexes;
+
+	// Got through all sequences and make filtration of the line's bytes
+	for (i = 0; i < excludeData.size(); i++) {
+		for (j = 0; j < lineLength - excludeData[i].length; j++) {
+
+			// Check if the current subset of bytes is equal to the denied sequence
+			bool isSequenceDetected = true;
+			for (k = j; k < j + excludeData[i].length; k++) {
+				if (line[k] != excludeData[i].vec[k - j] && line[k] != excludeData[i].vec[k - j] + 0xFFFFFF00) {
+					isSequenceDetected = false;
+				}
+			}
+			if (isSequenceDetected) {
+				for (k = j; k < j + excludeData[i].length; k++) {
+					removeIndexes.push_back(k);
+				}
+			}
+		}
+	}
+
+	// Remove duplicate indexes
+	std::sort(removeIndexes.begin(), removeIndexes.end());
+	removeIndexes.erase(std::unique(removeIndexes.begin(), removeIndexes.end() ), removeIndexes.end());
+	
+	for (i = 0; i < removeIndexes.size(); i++) {
+		char msgbuf[2];
+		sprintf(msgbuf, "%i ", removeIndexes[i]);
+		OutputDebugString(msgbuf);
+	}
+
+	OutputDebugString("\n");
+	
+	int newLineLength = lineLength;
+	
+	// Count number of array shifts
+	int shiftCount = 0;
+	
+	// Shift array of bytes due to the denied indexes
+	for (i = 0; i < removeIndexes.size(); i++) {
+		std::copy(line + removeIndexes[i] + 1 - shiftCount, line + newLineLength, line + removeIndexes[i] - shiftCount);
+		newLineLength--;
+		shiftCount++;
+	}
+
 }
 
 HRESULT CExeModule::ProcessFile(BSTR File,std::ofstream&olg)
@@ -4213,7 +4288,7 @@ HRESULT CExeModule::ProcessFile(BSTR File,std::ofstream&olg)
 							olg<<vebuf<<endl;
 						}
 					}
-					clearCharFromString(line);
+					clearCharFromString(line, sizeof(line));
 					if(useFormat){
 						switch(Format){
 						case 0:
@@ -5016,6 +5091,18 @@ DWORD WINAPI CExeModule::RegConfiguration()
 		}
 	}
 	catch(hkey::regerror&){}
+	
+	// Read all exclude characters from the registry
+	try {
+		DWORD dwBufSize = sizeof(ExcludeCharacters);
+		DWORD error = RegQueryValueEx(hvsu,"ExcludeCharacters",0,0, (LPBYTE)ExcludeCharacters, &dwBufSize);
+		if (error == ERROR_SUCCESS && dwBufSize > 0) {
+			isExcludeCharacterDetected = true;
+		}
+	}
+	catch(hkey::regerror&){
+		
+	}
 
 	// Format 2016
 	if(alterfunc){

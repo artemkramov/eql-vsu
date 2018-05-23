@@ -2,3 +2,162 @@ Call1(PrintReport)
 4190007;0x0;
 Call1(PrintReport)
 4190007;0x0;
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+Call1(PrintReport)
+4190007;0x0;
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+4190007;0x80004005;
+Line 1: Unknown fatal error
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+4190007;0x80004005;
+Line 1: Unknown fatal error
+ProcessFile(File)
+C/пыкгсг се пайето/
+4190007;0x80004005;
+Line 1: Unknown fatal error
+ProcessFile(File)
+C/пыкгсг се пайето/
+4190007;0x80004005;
+Line 1: Unknown fatal error
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+C/пыкгсг се пайето/
+ProcessFile(File)
+@C/пыкгсг се пайето/
+4190007;0xc0005012;
+Line 1: Unknown command identifier in line: @Cпыкгсгсепайе
+ProcessFile(File)
+@C/пыкгсг се пайето/
+S/елпояеула а/12/56.36/23/1/
+4190007;0xc00051ed;
+Line 2: 0xe0028115: Command : Cash register returned error 0xed: Invalid price
+ProcessFile(File)
+@C/пыкгсг се пайето/
+S/елпояеула а/12/5.36/23/1/
+S/елпояеула б/1/0.36/23/1/
+CR/0,00/
+
+4190007;0xc0005012;
+Line 5: Unknown command identifier in line: 
+ProcessFile(File)
+@C/пыкгсг се пайето/
+S/елпояеула а/12/5.36/23/1/
+S/елпояеула б/1/0.36/23/1/
+CR/0,00/
+
+4190007;0x0;

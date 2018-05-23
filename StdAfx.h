@@ -160,6 +160,7 @@ public:
 	keo::ModuleHandle hres;
 	_bstr_t WatchDir;
 	_bstr_t WatchMask;
+	unsigned char ExcludeCharacters[1000];
 	CExeModule();
 	LONG Unlock();
 	DWORD dwThreadID;
