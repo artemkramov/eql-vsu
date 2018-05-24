@@ -4184,13 +4184,13 @@ void clearCharFromString(char * line, int lineLength)
 	std::sort(removeIndexes.begin(), removeIndexes.end());
 	removeIndexes.erase(std::unique(removeIndexes.begin(), removeIndexes.end() ), removeIndexes.end());
 	
-	for (i = 0; i < removeIndexes.size(); i++) {
+	/*for (i = 0; i < removeIndexes.size(); i++) {
 		char msgbuf[2];
 		sprintf(msgbuf, "%i ", removeIndexes[i]);
 		OutputDebugString(msgbuf);
 	}
 
-	OutputDebugString("\n");
+	OutputDebugString("\n");*/
 	
 	int newLineLength = lineLength;
 	

@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Help Co\vsu]
+"ExcludeCharacters"=hex:1b,40,43,0c

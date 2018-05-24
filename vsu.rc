@@ -62,7 +62,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 205, 775, 17674, 22946
+ FILEVERSION 205, 776, 17675, 20540
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -81,7 +81,7 @@ BEGIN
             VALUE "Comments", "Fiscal Printer Utility\0"
             VALUE "CompanyName", "Help Micro\0"
             VALUE "FileDescription", "vsu Module\0"
-            VALUE "FileVersion", "205, 775, 17674, 22946\0"
+            VALUE "FileVersion", "205, 776, 17675, 20540\0"
             VALUE "InternalName", "vsu\0"
             VALUE "LegalCopyright", "Copyright 2000-2008\0"
             VALUE "LegalTrademarks", "Help Micro\0"
