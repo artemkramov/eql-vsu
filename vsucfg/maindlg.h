@@ -11,6 +11,9 @@
 
 #define IDC_E_CLASSIC   IDC_F_VSU
 #define IDC_E_MODE2016  IDC_F_ISL
+#define MAX_EXCLUDE_CHARACTES 2000
+#define DELIMITER_BYTE 0x43
+
 
 #include <myreg.h>
 #include <atldlgs.h>
@@ -19,6 +22,7 @@
 #include <atlddx.h>
 #include <atlcrack.h>
 #include <atlmisc.h>
+
 
 #if (_ATL_VER < 0x0700)
 #pragma message("_ATL_VER < 0x0700")
@@ -129,6 +133,7 @@ public:
 		DDX_UINT_RANGE(IDC_USER, m_nUser,0L,255L)
 		DDX_UINT_RANGE(IDC_PASSWORD, m_nPassword,0L,999999L)
 		DDX_TEXT(IDC_LOCATION, m_szLocation)
+	
 	END_DDX_MAP()
 
 };
@@ -185,6 +190,34 @@ public:
 		DDX_TEXT(IDC_WATCHDIR, m_szWatchDir)
 		DDX_TEXT(IDC_WATCHMASK, m_szWatchMask)
 	END_DDX_MAP()
+};
+
+class CPPExcludeCharacters:
+	public CPropertyPageImpl<CPPExcludeCharacters>,
+	public CWinDataExchange<CPPExcludeCharacters>
+{
+		hkey vsu;
+	public:
+		enum {IDD=IDD_EXCLUDE_CHAR};
+		
+		CPPExcludeCharacters();
+		~CPPExcludeCharacters();
+		
+		BOOL OnInitDialog(HWND hwndFocus, LPARAM lParam);
+		
+		int OnApply();
+		
+		TCHAR m_bExclude[MAX_PATH];
+		
+		BEGIN_MSG_MAP_EX(CPPExcludeCharacters)
+			MSG_WM_INITDIALOG(OnInitDialog)
+			CHAIN_MSG_MAP(CPropertyPageImpl<CPPExcludeCharacters>)
+		END_MSG_MAP()
+
+		BEGIN_DDX_MAP(CPPExcludeCharacters)
+			DDX_TEXT(IDC_EXCLUDE, m_bExclude)
+		END_DDX_MAP()
+
 };
 
 class CPPDeptCodes:public CPropertyPageImpl<CPPDeptCodes>
@@ -294,6 +327,8 @@ public:
 	END_MSG_MAP()
 };
 
+
+
 //class CMainDlg : public CDialogImpl<CMainDlg>, public CUpdateUI<CMainDlg>,
 		//public CMessageFilter, public CIdleHandler
 class CMainDlg : public CPropertySheetImpl<CMainDlg>, public CUpdateUI<CMainDlg>,
@@ -318,6 +353,7 @@ public:
 	CPPEncoding m_pgEncoding;
 	CPPDeptCodes m_pgDeptCodes;
 	CPPFormat2016 m_pgFormat2016;
+	CPPExcludeCharacters m_ExcludeCharacters;
 
 	BEGIN_UPDATE_UI_MAP(CMainDlg)
 	END_UPDATE_UI_MAP()

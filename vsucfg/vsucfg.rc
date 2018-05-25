@@ -76,7 +76,9 @@ BEGIN
                     BS_AUTORADIOBUTTON,15,51,190,10
 		CONTROL         "Repeat button",
                     IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,29,60,10
-    GROUPBOX        "Input encoding",IDC_STATIC,7,74,100,37
+		//LTEXT           "Exclude characters (hex mode), separator - 43:",IDC_STATIC,15,40,
+    //                190,10
+		GROUPBOX        "Input encoding",IDC_STATIC,7,74,100,37
     CONTROL         "OEM",IDC_IN_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
                     15,84,76,10
     CONTROL         "Windows",IDC_IN_WIN,"Button",BS_AUTORADIOBUTTON,15,95,
@@ -147,6 +149,14 @@ BEGIN
                     WS_TABSTOP,7,7,206,114
 END
 
+IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Denied characters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT IDC_EXCLUDE,0,0,220,70,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -186,12 +196,26 @@ BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 213
         VERTGUIDE, 15
+        VERTGUIDE, 72
+        VERTGUIDE, 74
+        VERTGUIDE, 106
+        VERTGUIDE, 118
+        VERTGUIDE, 170
+        VERTGUIDE, 172
         VERTGUIDE, 204
         TOPMARGIN, 7
         BOTTOMMARGIN, 144
     END
 
     IDD_FORMAT2016, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+		IDD_EXCLUDE_CHAR, DIALOG
     BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 213
@@ -233,7 +257,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 28, 77, 17668, 29269
+ FILEVERSION 28, 187, 17676, 43469
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -252,7 +276,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Help Micro\0"
             VALUE "FileDescription", "VSU config utility\0"
-            VALUE "FileVersion", "28, 77, 17668, 29269\0"
+            VALUE "FileVersion", "28, 187, 17676, 43469\0"
             VALUE "InternalName", "vsucfg.exe\0"
             VALUE "LegalCopyright", "Copyright 2005 Help Micro\0"
             VALUE "LegalTrademarks", "\0"

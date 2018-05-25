@@ -13,9 +13,10 @@
 #define _RICHEDIT_VER	0x0100
 #define _WTL_NEW_PAGE_NOTIFY_HANDLERS
 
-
 #include <atlbase.h>
 #include <atlapp.h>
+
+
 
 extern CAppModule _Module;
 

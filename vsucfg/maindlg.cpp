@@ -3,6 +3,7 @@
 #include "maindlg.h"
 #include "atlmisc.h"
 #include "chkln.h"
+#include <string>
 
 #define _WIN32_MSI   110
 #include <msi.h>
@@ -158,6 +159,43 @@ CPPFormat2016::CPPFormat2016():
 {
 }
 
+CPPExcludeCharacters::CPPExcludeCharacters():
+vsu(HKEY_LOCAL_MACHINE,_T("SOFTWARE\\Help Co\\vsu"))
+{
+	// Try to read exclude bytes
+	try{
+		unsigned char ExcludeCharacters[MAX_EXCLUDE_CHARACTES];
+		ZeroMemory(m_bExclude, sizeof(m_bExclude));
+		DWORD dwBufSize = sizeof(ExcludeCharacters);
+		DWORD error = RegQueryValueEx(vsu,"ExcludeCharacters",0,0, (LPBYTE)ExcludeCharacters, &dwBufSize);
+		char msgbuf[2];
+		
+		int counter = 0;
+		if (error == ERROR_SUCCESS && dwBufSize > 0) {
+			bool isDelimiter = false;
+			for (int i = 0; i < dwBufSize; i++) {
+				if (i != dwBufSize - 1 && i > 0 && !isDelimiter && ExcludeCharacters[i] != DELIMITER_BYTE) {
+					m_bExclude[counter++] = ' ';
+				}
+				if (ExcludeCharacters[i] == DELIMITER_BYTE) {
+					m_bExclude[counter++] = 0x0d;
+					m_bExclude[counter++] = 0x0a;
+					isDelimiter = true;
+				}
+				else {
+					sprintf(msgbuf, "%02x", ExcludeCharacters[i]);
+					m_bExclude[counter++] = msgbuf[0];
+					m_bExclude[counter++] = msgbuf[1];
+					isDelimiter = false;
+				}
+				
+				
+			}
+		}
+	}
+	catch(hkey::regerror&){}
+}
+
 CPPEncoding::~CPPEncoding()
 {
 }
@@ -173,6 +211,12 @@ CPPDeptCodes::~CPPDeptCodes()
 CPPFormat2016::~CPPFormat2016()
 {
 }
+
+CPPExcludeCharacters::~CPPExcludeCharacters()
+{
+}
+
+
 
 BOOL CPPEncoding::OnInitDialog (HWND hwndFocus,LPARAM lParam)
 {
@@ -351,6 +395,12 @@ BOOL CPPFormat2016::OnInitDialog(HWND hwndFocus, LPARAM lParam)
 	return TRUE;
 }
 
+BOOL CPPExcludeCharacters::OnInitDialog(HWND hwndFocus, LPARAM lParam)
+{
+	DoDataExchange(false);
+	return TRUE;
+}
+
 LRESULT CPPEncoding::OnRadio(WORD /*wNotifyCode*/, WORD wID, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 {
 	switch(wID){
@@ -383,6 +433,8 @@ int CPPEncoding::OnApply()
 			vsu.lvalue(_T("RepeatMode"))=long(m_nRepeatMode);
 			vsu.lvalue(_T("WatchDir"))=m_szWatchDir;
 			vsu.lvalue(_T("WatchMask"))=m_szWatchMask;
+
+			
 			return PSNRET_NOERROR;
 		}
 		catch(hkey::regerror&){}
@@ -463,6 +515,73 @@ int CPPFormat2016::OnApply()
 	return PSNRET_NOERROR;
 }
 
+int CPPExcludeCharacters::OnApply()
+{
+	if(DoDataExchange(true)) {
+		try {
+			// Parse text with hex codes and write it to binary
+			BYTE bytes[sizeof(m_bExclude)];
+			bool isByteFound = false;
+			int byteCount = 0;
+			for (int i = 0; i < sizeof(m_bExclude); i++) {
+						
+					// Check if it is the end of string
+					if (m_bExclude[i] == 0x00) {
+						break;
+					}
+					
+					// Skip spaces
+					if (m_bExclude[i] == 0x20) {
+						continue;
+					}
+
+					// Check for enter symbol
+					if (i > 0 && m_bExclude[i - 1] == 0x0d && m_bExclude[i] == 0x0a) {
+						isByteFound = true;
+						m_bExclude[i - 1] = '4';
+						m_bExclude[i] = '3';
+					}
+					
+					// Check if byte is found
+					// Than copy current and previous hex symbols to byte array
+					if (isByteFound) {
+						TCHAR tmp[2];
+						
+						// Set previous and current hex symbols
+						tmp[0] = m_bExclude[i - 1];
+						tmp[1] = m_bExclude[i];
+						std::string str(tmp);
+						
+						// Convert hex 2-symbol string to byte
+						char byte = (char) strtol(str.c_str(), NULL, 16);
+						bytes[byteCount] = byte;
+						byteCount++;
+						isByteFound = false;
+					}
+					else {
+						isByteFound = true;
+					}
+			}
+			
+			int totalCount = byteCount;
+			for (i = byteCount - 1; i >= 0; i--) {
+				if (bytes[i] == 0x43) {
+					totalCount--;
+				}
+				else {
+					break;
+				}
+			}
+			// Set new binary value
+			RegSetValueEx(vsu, "ExcludeCharacters", 0, REG_BINARY, (BYTE *)bytes, totalCount);
+			return PSNRET_NOERROR;
+		}
+		catch(hkey::regerror&){}
+
+	}
+	return PSNRET_INVALID;
+}
+
 void CPPDefConn::assign(moveshow&dst,int show,int pos)
 {
 	dst.show=show;
@@ -535,6 +654,7 @@ CMainDlg::CMainDlg():CPropertySheetImpl<CMainDlg>(IDS_TITLE)
 	AddPage(m_pgEncoding);
 	if(alterfunc==1){
 		AddPage(m_pgFormat2016);
+		AddPage(m_ExcludeCharacters);
 	}
 	else{
 		AddPage(m_pgDeptCodes);
