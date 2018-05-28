@@ -6,28 +6,22 @@
 --------------------Configuration: vsucfg - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DB.tmp" with contents
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30C.tmp" with contents
 [
 /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "STRICT" /D ALTERFUNC=1 /FR"Debug/" /Fp"Debug/vsucfg.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "E:\prj\win\dbc\vsu\vsucfg\maindlg.cpp"
-"E:\prj\win\dbc\vsu\vsucfg\vsucfg.cpp"
 ]
-Creating command line "cl.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DB.tmp" 
-Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DC.bat" with contents
+Creating command line "cl.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30C.tmp" 
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30D.bat" with contents
 [
 @echo off
 d:\perl\bin\perl.exe e:\prj\win\perl\updver.pl .\vsucfg.rc .\Debug\vsucfg.res
 ]
-Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DC.bat"
+Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30D.bat"
 Compiling...
 maindlg.cpp
-Generating Code...
 _ATL_VER < 0x0700
-Compiling...
-vsucfg.cpp
-Generating Code...
-_ATL_VER < 0x0700
-Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DD.tmp" with contents
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30E.tmp" with contents
 [
 msi.lib shell32.lib myreg.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/vsucfg.pdb" /debug /machine:I386 /out:"Debug/vsucfg.exe" /pdbtype:sept /libpath:"e:\lib1998\d" 
 .\Debug\chkln.obj
@@ -36,7 +30,7 @@ msi.lib shell32.lib myreg.lib /nologo /subsystem:windows /incremental:yes /pdb:"
 .\Debug\vsucfg.obj
 .\Debug\vsucfg.res
 ]
-Creating command line "link.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP5DD.tmp"
+Creating command line "link.exe @D:\DOCUME~1\igor\LOCALS~1\Temp\RSP30E.tmp"
 
 #this is version resource
 Current position is 00002e9c
@@ -44,7 +38,7 @@ Comments=
 CompanyName=Help Micro
 FileDescription=VSU config utility
 here we need to work
-FileVersion=28, 186, 17676, 42649
+FileVersion=28, 192, 17679, 20194
 InternalName=vsucfg.exe
 LegalCopyright=Copyright 2005 Help Micro
 LegalTrademarks=

@@ -60,7 +60,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 	{
 		HMODULE hm=NULL;
 		TCHAR szFile[MAX_PATH];
-		LCID const lcid=1033;//GetThreadLocale();
+		LCID const lcid=GetThreadLocale();
 		//GUID для vsucfg.exe
 		TCHAR szComponent[]=TEXT("{90B2CB63-13DC-4C87-96AE-10EAD7687C37}");
 		//определяем идентификатор продукта и установлен ли продукт

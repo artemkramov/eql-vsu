@@ -8,6 +8,7 @@
 #define IDD_DEPTCODES                   201
 #define IDD_DEFCONN                     202
 #define IDD_FORMAT2016                  203
+#define IDD_EXCLUDE_CHAR								204
 #define IDC_IN_OEM                      1000
 #define IDC_IN_WIN                      1001
 #define IDC_OUT_OEM                     1002
@@ -42,6 +43,8 @@
 #define IDC_LIST_IDS                    1030
 #define IDC_CHB_AUTORUN                 1031
 #define IDC_CHB_REPEAT_MODE							1032
+#define IDC_STATIC_EXCLUDE              1033
+#define IDC_EXCLUDE											1034
 #define IDS_TITLE                       61403
 #define IDS_COLHEAD_DEPT                61404
 #define IDS_COLHEAD_CODE                61405
@@ -63,9 +66,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        204
+#define _APS_NEXT_RESOURCE_VALUE        205
 #define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1033
+#define _APS_NEXT_CONTROL_VALUE         1035
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

@@ -147,6 +147,14 @@ BEGIN
                     WS_TABSTOP,7,7,206,114
 END
 
+IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Denied characters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT IDC_EXCLUDE,0,0,220,70,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -198,6 +206,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 163
     END
+
+		IDD_EXCLUDE_CHAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -233,7 +249,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 28, 27, 17668, 28838
+ FILEVERSION 29, 27, 17679, 19722
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -252,7 +268,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Help Micro\0"
             VALUE "FileDescription", "VSU config utility\0"
-            VALUE "FileVersion", "28, 27, 17668, 28838\0"
+            VALUE "FileVersion", "29, 27, 17679, 19722\0"
             VALUE "InternalName", "vsucfg.exe\0"
             VALUE "LegalCopyright", "Copyright 2005-2017 Help Micro\0"
             VALUE "LegalTrademarks", "\0"

@@ -7,22 +7,22 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x422 /fo"Release/vsucfg.res" /d "NDEBUG" "E:\prj\win\dbc\vsu\vsucfg\vsucfgr408\vsucfg.rc"" 
-Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP27A4.bat" with contents
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2ED.bat" with contents
 [
 @echo off
 d:\perl\bin\perl.exe e:\prj\win\perl\updver.pl .\vsucfg.rc .\Release\vsucfg.res
 ]
-Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP27A4.bat"
+Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2ED.bat"
 Compiling resources...
 Creating command line "link.exe /nologo /base:"0x38900000" /dll /incremental:no /pdb:"Release/vsucfgr.pdb" /machine:I386 /nodefaultlib /out:"Release/vsucfgr.dll" /implib:"Release/vsucfgr.lib" /noentry  .\Release\vsucfg.res "
 
 #this is version resource
-Current position is 00002e08
+Current position is 00002e9c
 Comments=
 CompanyName=Help Micro
 FileDescription=VSU config utility
 here we need to work
-FileVersion=27, 27, 17668, 28739
+FileVersion=28, 27, 17668, 28838
 InternalName=vsucfg.exe
 LegalCopyright=Copyright 2005-2017 Help Micro
 LegalTrademarks=

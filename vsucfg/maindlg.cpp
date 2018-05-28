@@ -174,7 +174,7 @@ vsu(HKEY_LOCAL_MACHINE,_T("SOFTWARE\\Help Co\\vsu"))
 		if (error == ERROR_SUCCESS && dwBufSize > 0) {
 			bool isDelimiter = false;
 			for (int i = 0; i < dwBufSize; i++) {
-				if (i != dwBufSize - 1 && i > 0 && !isDelimiter && ExcludeCharacters[i] != DELIMITER_BYTE) {
+				if (i > 0 && !isDelimiter && ExcludeCharacters[i] != DELIMITER_BYTE) {
 					m_bExclude[counter++] = ' ';
 				}
 				if (ExcludeCharacters[i] == DELIMITER_BYTE) {
