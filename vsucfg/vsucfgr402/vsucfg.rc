@@ -74,6 +74,12 @@ BEGIN
                     40,190,10
     CONTROL         "Orgtech формат",IDC_F_DATECS,"Button",
                     BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Classic VSU behavior",IDC_MODE1_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "New error handling mode",IDC_MODE2_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Error handling mode",IDC_MODE3_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
 		CONTROL         "Repeat button",
                     IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,29,60,10
     GROUPBOX        "Входящо прекодиране",IDC_STATIC,7,74,100,37
@@ -148,12 +154,12 @@ BEGIN
                     WS_TABSTOP,7,7,206,114
 END
 
-IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 170
+IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 200
 STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
 CAPTION "Denied characters"
 FONT 8, "MS Sans Serif"
 BEGIN
-    EDITTEXT IDC_EXCLUDE,0,0,220,70,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN
+    EDITTEXT IDC_EXCLUDE,0,0,220,200,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
 END
 
 
@@ -256,7 +262,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 20, 0, 17679, 19390
+ FILEVERSION 24, 0, 17686, 35646
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -275,7 +281,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Хелп Микро\0"
             VALUE "FileDescription", "VSU конфигурация на програмата\0"
-            VALUE "FileVersion", "20, 0, 17679, 19390\0"
+            VALUE "FileVersion", "24, 0, 17686, 35646\0"
             VALUE "InternalName", "vsucfgr\0"
             VALUE "LegalCopyright", "Копие 2005 Хелп Микро\0"
             VALUE "LegalTrademarks", "\0"

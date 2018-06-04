@@ -45,6 +45,9 @@
 #define IDC_CHB_REPEAT_MODE							1032
 #define IDC_STATIC_EXCLUDE              1033
 #define IDC_EXCLUDE											1034
+#define IDC_MODE1_H											1035
+#define IDC_MODE2_H											1036
+#define IDC_MODE3_H											1037
 #define IDS_TITLE                       61403
 #define IDS_COLHEAD_DEPT                61404
 #define IDS_COLHEAD_CODE                61405
@@ -68,7 +71,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        205
 #define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1035
+#define _APS_NEXT_CONTROL_VALUE         1038
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

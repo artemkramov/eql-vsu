@@ -6,26 +6,24 @@
 --------------------Configuration: vsucfgr402 - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x422 /fo"Release/vsucfg.res" /d "NDEBUG" "E:\prj\win\dbc\vsu\vsucfg\vsucfgr402\vsucfg.rc"" 
-Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2E6.bat" with contents
+Creating temporary file "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2F4.bat" with contents
 [
 @echo off
 d:\perl\bin\perl.exe e:\prj\win\perl\updver.pl .\vsucfg.rc .\Release\vsucfg.res
 ]
-Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2E6.bat"
-Compiling resources...
+Creating command line "D:\DOCUME~1\igor\LOCALS~1\Temp\RSP2F4.bat"
 Creating command line "link.exe /nologo /base:"0x38900000" /dll /incremental:no /pdb:"Release/vsucfgr.pdb" /machine:I386 /nodefaultlib /out:"Release/vsucfgr.dll" /implib:"Release/vsucfgr.lib" /noentry  .\Release\vsucfg.res "
 
 Wide character in print at e:\prj\win\perl\updver.pl line 209.
 Wide character in print at e:\prj\win\perl\updver.pl line 209.
 Wide character in print at e:\prj\win\perl\updver.pl line 209.
 #this is version resource
-Current position is 00002f1c
+Current position is 00002fe8
 Comments=
 CompanyName=Хелп Микро
 FileDescription=VSU конфигурация на програмата
 here we need to work
-FileVersion=19, 0, 17668, 27412
+FileVersion=23, 0, 17686, 31184
 InternalName=vsucfgr
 LegalCopyright=Копие 2005 Хелп Микро
 LegalTrademarks=

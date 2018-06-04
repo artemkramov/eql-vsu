@@ -67,32 +67,38 @@ FONT 8, "MS Sans Serif"
 BEGIN
     GROUPBOX        "Input files format",IDC_STATIC,7,7,206,61
     CONTROL         "Native VSU format",IDC_F_VSU,"Button",
-                    BS_AUTORADIOBUTTON | WS_GROUP,15,18,110,10
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,18,190,10
     CONTROL         "ISL driver format",IDC_F_ISL,"Button",
                     BS_AUTORADIOBUTTON,15,29,110,10
     CONTROL         "ELKA driver format",IDC_F_ELKA,"Button",
                     BS_AUTORADIOBUTTON,15,40,190,10
     CONTROL         "Orgtech format",IDC_F_DATECS,"Button",
                     BS_AUTORADIOBUTTON,15,51,190,10
-		CONTROL         "Repeat button",
-                    IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,29,60,10
-    GROUPBOX        "Input encoding",IDC_STATIC,7,74,100,37
-    CONTROL         "OEM",IDC_IN_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+		CONTROL         "Έλεγχος απο το πρόγραμμα πώλησης",IDC_MODE1_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Αυτόματος έλεγχος απο VSU",IDC_MODE2_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Λειτουργία προγράμματος",IDC_MODE3_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Πλήκτρο επανάληψης",
+                    IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,42,100,10
+    GROUPBOX        "Τύπος  αρχείου",IDC_STATIC,7,74,100,37
+    CONTROL         "737",IDC_IN_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
                     15,84,76,10
-    CONTROL         "Windows",IDC_IN_WIN,"Button",BS_AUTORADIOBUTTON,15,95,
+    CONTROL         "928",IDC_IN_WIN,"Button",BS_AUTORADIOBUTTON,15,95,
                     76,10
-    GROUPBOX        "Output encoding",IDC_STATIC,113,74,100,37
-    CONTROL         "OEM",IDC_OUT_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+    GROUPBOX        "Αλλαγή αρχείου σε",IDC_STATIC,113,74,100,37
+    CONTROL         "737",IDC_OUT_OEM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
                     121,84,76,10
-    CONTROL         "Windows",IDC_OUT_WIN,"Button",BS_AUTORADIOBUTTON,121,95,
+    CONTROL         "928",IDC_OUT_WIN,"Button",BS_AUTORADIOBUTTON,121,95,
                     76,10
-    GROUPBOX        "Watch directory settings",IDC_STATIC,7,116,206,65
-    CONTROL         "Execute files appearing in specified directory:",
+    GROUPBOX        "Ρυθμίσεις φακέλου & όνομα αρχείου",IDC_STATIC,7,116,206,65
+    CONTROL         "Φάκελος παραλαβής αρχείων:",
                     IDC_USE_WATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,
                     126,190,10
     EDITTEXT        IDC_WATCHDIR,15,138,134,14,ES_AUTOHSCROLL
-    PUSHBUTTON      "&Change",IDC_WATCHDIR_CHANGE,155,138,50,14
-    RTEXT           "Execute only files matching mask:",IDC_STATIC,15,159,
+    PUSHBUTTON      "&Αλλαγή",IDC_WATCHDIR_CHANGE,155,138,50,14
+    RTEXT           "Παραλαβή αρχείων με όνομα:",IDC_STATIC,15,159,
                     125,8
     EDITTEXT        IDC_WATCHMASK,145,158,60,14,ES_AUTOHSCROLL
 END
@@ -114,7 +120,7 @@ FONT 8, "MS Sans Serif"
 BEGIN
     CONTROL         "Eκκίνηση με τα windows",IDC_CHB_AUTORUN,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,15,7,189,10
-    CONTROL         "Connect ECR on load",IDC_CHB_DEFCONN,"Button",
+    CONTROL         "Σύνδεση με την ταμειακή όταν ανοίγει το vsu",IDC_CHB_DEFCONN,"Button",
                     BS_AUTOCHECKBOX | WS_TABSTOP,15,18,189,10
     GROUPBOX        "",IDC_STATIC,7,34,206,49
     CONTROL         "Base protocol (by logical number)",IDC_RADIO_LOGNUM,
@@ -147,12 +153,12 @@ BEGIN
                     WS_TABSTOP,7,7,206,114
 END
 
-IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 170
+IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 200
 STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
-CAPTION "Denied characters"
+CAPTION "Φίλτρο ανεπιθ.χαρακτήρων"
 FONT 8, "MS Sans Serif"
 BEGIN
-    EDITTEXT IDC_EXCLUDE,0,0,220,70,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN
+    EDITTEXT IDC_EXCLUDE,0,0,220,200,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
 END
 
 
@@ -249,7 +255,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 29, 27, 17679, 19722
+ FILEVERSION 54, 27, 17686, 35648
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -268,7 +274,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Help Micro\0"
             VALUE "FileDescription", "VSU config utility\0"
-            VALUE "FileVersion", "29, 27, 17679, 19722\0"
+            VALUE "FileVersion", "54, 27, 17686, 35648\0"
             VALUE "InternalName", "vsucfg.exe\0"
             VALUE "LegalCopyright", "Copyright 2005-2017 Help Micro\0"
             VALUE "LegalTrademarks", "\0"

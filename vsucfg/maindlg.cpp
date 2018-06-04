@@ -162,38 +162,63 @@ CPPFormat2016::CPPFormat2016():
 CPPExcludeCharacters::CPPExcludeCharacters():
 vsu(HKEY_LOCAL_MACHINE,_T("SOFTWARE\\Help Co\\vsu"))
 {
+
+	unsigned char ExcludeCharacters[MAX_EXCLUDE_CHARACTES];
+	ZeroMemory(m_bExclude, sizeof(m_bExclude));
+	DWORD dwBufSize = sizeof(ExcludeCharacters);
+	DWORD error = ERROR_INVALID_HANDLE;
+	char msgbuf[2];
+	int counter = 0;
+	
 	// Try to read exclude bytes
 	try{
-		unsigned char ExcludeCharacters[MAX_EXCLUDE_CHARACTES];
-		ZeroMemory(m_bExclude, sizeof(m_bExclude));
-		DWORD dwBufSize = sizeof(ExcludeCharacters);
-		DWORD error = RegQueryValueEx(vsu,"ExcludeCharacters",0,0, (LPBYTE)ExcludeCharacters, &dwBufSize);
-		char msgbuf[2];
 		
-		int counter = 0;
-		if (error == ERROR_SUCCESS && dwBufSize > 0) {
-			bool isDelimiter = false;
+		error = RegQueryValueEx(vsu,"ExcludeCharacters",0,0, (LPBYTE)ExcludeCharacters, &dwBufSize);
+		if (error == ERROR_FILE_NOT_FOUND) {
+			
+			// If the registry key is absent
+			// than set the ExcludeCharacters with default values
+			error = ERROR_SUCCESS;
+		
+			unsigned char defaultExcludeCharacters[62] = {0x1b, 0x40, DELIMITER_BYTE, 0x0c, DELIMITER_BYTE, 0x01, DELIMITER_BYTE, 0x02, DELIMITER_BYTE,
+				0x03, DELIMITER_BYTE, 0x04, DELIMITER_BYTE, 0x05, DELIMITER_BYTE, 0x06, DELIMITER_BYTE, 0x07, DELIMITER_BYTE, 0x08, DELIMITER_BYTE, 
+				0x09, DELIMITER_BYTE, 0x10, DELIMITER_BYTE, 0x11, DELIMITER_BYTE, 0x12, DELIMITER_BYTE, 0x13, DELIMITER_BYTE, 0x14, DELIMITER_BYTE,
+				0x15, DELIMITER_BYTE, 0x16, DELIMITER_BYTE, 0x17, DELIMITER_BYTE, 0x18, DELIMITER_BYTE, 0x19, DELIMITER_BYTE, 0x0a, DELIMITER_BYTE,
+				0x0b, DELIMITER_BYTE, 0x0c, DELIMITER_BYTE, 0x0d, DELIMITER_BYTE, 0x0e, DELIMITER_BYTE, 0x0f, DELIMITER_BYTE, 0x1c, DELIMITER_BYTE,
+				0x1d, DELIMITER_BYTE, 0x1e, DELIMITER_BYTE, 0x1f};
+			dwBufSize = sizeof(defaultExcludeCharacters);
 			for (int i = 0; i < dwBufSize; i++) {
-				if (i > 0 && !isDelimiter && ExcludeCharacters[i] != DELIMITER_BYTE) {
-					m_bExclude[counter++] = ' ';
-				}
-				if (ExcludeCharacters[i] == DELIMITER_BYTE) {
-					m_bExclude[counter++] = 0x0d;
-					m_bExclude[counter++] = 0x0a;
-					isDelimiter = true;
-				}
-				else {
-					sprintf(msgbuf, "%02x", ExcludeCharacters[i]);
-					m_bExclude[counter++] = msgbuf[0];
-					m_bExclude[counter++] = msgbuf[1];
-					isDelimiter = false;
-				}
-				
-				
+				ExcludeCharacters[i] = defaultExcludeCharacters[i];
 			}
 		}
 	}
-	catch(hkey::regerror&){}
+	catch(hkey::regerror&){
+		
+	}
+
+	// If the registry data was fetched and not empty response
+	// Than convert result to string representation
+	if (error == ERROR_SUCCESS && dwBufSize > 0) {
+		bool isDelimiter = false;
+		for (int i = 0; i < dwBufSize; i++) {
+			if (i > 0 && !isDelimiter && ExcludeCharacters[i] != DELIMITER_BYTE) {
+				m_bExclude[counter++] = ' ';
+			}
+			if (ExcludeCharacters[i] == DELIMITER_BYTE) {
+				m_bExclude[counter++] = 0x0d;
+				m_bExclude[counter++] = 0x0a;
+				isDelimiter = true;
+			}
+			else {
+				sprintf(msgbuf, "%02x", ExcludeCharacters[i]);
+				m_bExclude[counter++] = msgbuf[0];
+				m_bExclude[counter++] = msgbuf[1];
+				isDelimiter = false;
+			}
+			
+			
+		}
+	}
 }
 
 CPPEncoding::~CPPEncoding()
@@ -222,11 +247,19 @@ BOOL CPPEncoding::OnInitDialog (HWND hwndFocus,LPARAM lParam)
 {
 	DoDataExchange(false);
 	if(alterfunc==1){
+		
 		// Rename items to support error handling mode selection
-		SetDlgItemText(IDC_E_CLASSIC, TEXT("Classic VSU behavior"));
-		SetDlgItemText(IDC_E_MODE2016, TEXT("New error handling mode"));
+		char* tmpLabel = (char*)malloc(MAX_EXCLUDE_CHARACTES);
+		GetDlgItemText(IDC_MODE1_H, tmpLabel, MAX_EXCLUDE_CHARACTES);
+		SetDlgItemText(IDC_E_CLASSIC, (LPTSTR)tmpLabel);
+		
+		GetDlgItemText(IDC_MODE2_H, tmpLabel, MAX_EXCLUDE_CHARACTES);
+		SetDlgItemText(IDC_E_MODE2016, (LPTSTR)tmpLabel);
+
+		GetDlgItemText(IDC_MODE3_H, tmpLabel, MAX_EXCLUDE_CHARACTES);
+		::SetWindowText(::GetWindow(GetDlgItem(IDC_F_VSU), GW_HWNDPREV), (LPTSTR)tmpLabel);
 		//::ShowWindow(::GetWindow(GetDlgItem(IDC_F_VSU), GW_HWNDPREV), SW_HIDE);
-		::SetWindowText(::GetWindow(GetDlgItem(IDC_F_VSU), GW_HWNDPREV), TEXT("Error handling mode"));
+		
 		// Hide unnecessary items
 		::ShowWindow(GetDlgItem(IDC_F_ELKA), SW_HIDE);
 		::ShowWindow(GetDlgItem(IDC_F_DATECS), SW_HIDE);
@@ -236,6 +269,11 @@ BOOL CPPEncoding::OnInitDialog (HWND hwndFocus,LPARAM lParam)
 			::ShowWindow(GetDlgItem(IDC_CHB_REPEAT_MODE), SW_HIDE);
 		}
 	}
+
+	// Hide all extra controls with necessary labels
+	::ShowWindow(GetDlgItem(IDC_MODE1_H), SW_HIDE);
+	::ShowWindow(GetDlgItem(IDC_MODE2_H), SW_HIDE);
+	::ShowWindow(GetDlgItem(IDC_MODE3_H), SW_HIDE);
 	return TRUE;
 }
 

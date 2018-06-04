@@ -1009,6 +1009,27 @@ Language=Bulgarian
 .
 
 MessageId =
+SymbolicName = st_error_handling_mode
+Language = English
+Error handling mode
+.
+Language = Greek
+Error handling mode1
+.
+Language = Ukrainian
+Error handling mode
+.
+Language = Russian
+Error handling mode
+.
+Language = Romanian
+Error handling mode
+.
+Language=Bulgarian
+Error handling mode
+.
+
+MessageId =
 SymbolicName = st_no_session_started
 Language = English
 Can not handle '%1!ls!' because connection with cash register is not initiated%0

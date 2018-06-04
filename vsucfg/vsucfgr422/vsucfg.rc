@@ -74,6 +74,12 @@ BEGIN
                     BS_AUTORADIOBUTTON,15,40,190,10
     CONTROL         "Емуляція драйвера Orgtech",IDC_F_DATECS,"Button",
                     BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Classic VSU behavior",IDC_MODE1_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "New error handling mode",IDC_MODE2_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
+		CONTROL         "Error handling mode",IDC_MODE3_H,"Button",
+                    BS_AUTORADIOBUTTON,15,51,190,10
 		CONTROL         "Repeat button",
                     IDC_CHB_REPEAT_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,29,60,10
     GROUPBOX        "Кодування вхідних файлів",IDC_STATIC,7,74,100,37
@@ -149,12 +155,12 @@ BEGIN
                     WS_TABSTOP,7,7,206,114
 END
 
-IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 170
+IDD_EXCLUDE_CHAR DIALOG DISCARDABLE  0, 0, 220, 200
 STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
 CAPTION "Denied characters"
 FONT 8, "MS Sans Serif"
 BEGIN
-    EDITTEXT IDC_EXCLUDE,0,0,220,70,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN
+    EDITTEXT IDC_EXCLUDE,0,0,220,200,ES_AUTOVSCROLL | ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
 END
 
 
@@ -257,7 +263,7 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 12, 0, 17679, 20125
+ FILEVERSION 16, 0, 17686, 35651
  PRODUCTVERSION 1,0,0,1
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
@@ -276,7 +282,7 @@ BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName", "Хелп Мікро\0"
             VALUE "FileDescription", "Конфігуратор VSU\0"
-            VALUE "FileVersion", "12, 0, 17679, 20125\0"
+            VALUE "FileVersion", "16, 0, 17686, 35651\0"
             VALUE "InternalName", "vsucfgr\0"
             VALUE "LegalCopyright", "Copyright 2005 Help Micro\0"
             VALUE "LegalTrademarks", "\0"

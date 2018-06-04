@@ -466,13 +466,22 @@
 #define st_no_BegReturn                  0xC0005018L
 
 //
+// MessageId: st_error_handling_mode
+//
+// MessageText:
+//
+//  Error handling mode
+//
+#define st_error_handling_mode           0xC0005019L
+
+//
 // MessageId: st_no_session_started
 //
 // MessageText:
 //
 //  Can not handle '%1!ls!' because connection with cash register is not initiated%0
 //
-#define st_no_session_started            0xC0005019L
+#define st_no_session_started            0xC000501AL
 
 //
 // MessageId: st_no_session_established
@@ -481,7 +490,7 @@
 //
 //  Can not handle '%1!ls!' because VSU is waiting for cash register connection%0
 //
-#define st_no_session_established        0xC000501AL
+#define st_no_session_established        0xC000501BL
 
 //
 // MessageId: st_temporary_unavailable
@@ -490,7 +499,7 @@
 //
 //  Can not handle '%1!ls!' because cash register has suddenly disconnected%0
 //
-#define st_temporary_unavailable         0xC000501BL
+#define st_temporary_unavailable         0xC000501CL
 
 
 #endif  //__MESSAGES_H__

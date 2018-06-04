@@ -106,3 +106,57 @@ S/елпояеула б/1/0.36/23/1/
 CR/0,00/
 
 4190007;0x0;
+ProcessFile(File)
+4190007;0xc00051d3;
+0xe0028115: Command : Cash register returned error 0xd3: Date change or the end of the shift is reached
+Call1(PrintReport)
+4190007;0x0;
+ProcessFile(File)
+@C/пыкгсг се пайето/
+4190007;0xc000700a;
+ProcessFile(File)
+@C/пыкгсг се пайето/
+4190007;0xc000700a;
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/цуяос воияимос      самтоуитс ап'ока/1,00/2,20/13/1/
+S/цуяос воияимос      леяида/1,00/6,00/13/1/
+S/лекитфама/1,00/2,20/13/1/
+S/цуяос BURGER/2,00/2,00/13/1/
+CR/0,00/
+4190007;0x0;
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/цуяос BURGER/12,00/21/13/1/
+4190007;0xc00051ed;
+Line 2: 0xe0028115: Command : Cash register returned error 0xed: Invalid price
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/елпояеула а/1/56.36/23/1/
+S/елпояеула б/1/0.36/23/1/
+CR/0,00/2
+4190007;0x0;
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/елпояеула а/12/56.36/23/1/
+4190007;0xc00051ed;
+Line 2: 0xe0028115: Command : Cash register returned error 0xed: Invalid price
+ProcessFile(File)
+@C/пыкгсг се пайето/
+S/елпояеула а/12/5.36/23/1/
+S/елпояеула б/1/0.36/23/1/
+CR/0,00/
+
+4190007;0x0;
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/цуяос BURGER/1,00/21/13/1/
+CR/0,00/
+4190007;0x0;
+ProcessFile(File)
+C/пыкгсг се пайето/
+S/елпояеула а/12/5.36/23/1/
+S/елпояеула б/1/0.36/23/1/
+CR/0,00/
+
+4190007;0x0;
